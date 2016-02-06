@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.28)  6 FEB 2016 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.28)  6 FEB 2016 16:07
 entering extended mode
 **Deliverable1_Template.tex
 (Deliverable1_Template.tex
@@ -272,35 +272,51 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/Terin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 118.
+{C:/Users/Terin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Deliverabl
+e1_Template.toc
+[2])
+\tf@toc=\write3
+ (Deliverable1_Template.lot)
+\tf@lot=\write4
+ [3] [4]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 122.
 
 
 ("C:\Program Files (x86)\Miktex\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
- [2] [3] [4] [5]
-[6] [7] (Deliverable1_Template.aux) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 122.
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
+
+ []
+
+[6] [7] [8] [9] [10] [11] (Deliverable1_Template.aux) ) 
 Here is how much of TeX's memory you used:
- 3335 strings out of 493673
- 43237 string characters out of 3143150
- 114111 words of memory out of 3000000
- 6643 multiletter control sequences out of 15000+200000
+ 3342 strings out of 493673
+ 43351 string characters out of 3143150
+ 117112 words of memory out of 3000000
+ 6644 multiletter control sequences out of 15000+200000
  11849 words of font info for 46 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,6n,43p,638b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/Miktex/fonts/type1
-/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/Miktex/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsf
-onts/cm/cmr10.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm
-/cmr12.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr17.
-pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Deliverable1_Template.pdf (7 pages, 112529 bytes).
+ 27i,14n,43p,638b,357s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/
+Miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/Miktex
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/Miktex/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/Miktex/fonts/type1/
+public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/
+amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/c
+mti10.pfb>
+Output written on Deliverable1_Template.pdf (11 pages, 121462 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

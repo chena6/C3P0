@@ -34,19 +34,23 @@
 \begin{document}
 
 \maketitle	
+\newpage
+\tableofcontents
+\listoftables
+\newpage
 
+% Begin Section
 \section{Introduction}
 \label{sec:introduction}
-% Begin Section
 
-This section of the SRS should provide an overview of the entire SRS.
+The following section provide an overview of the entire software requirements specifications document.
 
 \subsection{Purpose}
 \label{sub:purpose}
 % Begin SubSection
 \begin{enumerate}[a)]
-	\item Delineate the purpose of the SRS
-	\item Specify the intended audience for the SRS
+	\item The purpose this document is to outline the requirements for the \textcolor{blue}{"What is this Beer?"} application. This program willbve developed as a mobile android application and will be available on the \underline{Play Store}.
+	\item This document is intended for the developers of the application, Professor Ridha Khedri, teaching assistants for SE 3A04, and any other software engineers or students interested in this project.
 \end{enumerate}
 % End SubSection
 
@@ -54,10 +58,10 @@ This section of the SRS should provide an overview of the entire SRS.
 \label{sub:scope}
 % Begin SubSection
 \begin{enumerate}[a)]
-	\item Identify the software product(s) to be produced by name (e.g., Host DBMS, Report Generator, etc.)
-	\item Explain what the software product(s) will, and, if necessary, will not do
-	\item Describe the application of the software being specified, including relevant benefits, objectives, and goals
-	\item Be consistent with similar statements in higher-level specifications (e.g., the system requirements specification), if they exist
+	\item The software product to be produced is known as the \textcolor{blue}{"What is this Beer?"} mobile application.
+	\item This application will allow a user to identify a certain type of beer. This will be accomplished by three experts on the colour of beer, taste of beer, and type of beer, who will form their best choice as to what kind of beer the user describes when selecting some predefined inputs. The application will display these results, display a map of nearby \underline{LCBO's} and \underline{Beer Store's} according to the user's current location, \textcolor{red}{as well as some social media sharing features.}
+	\item \textcolor{blue}{Describe the application of the software being specified, including relevant benefits, objectives, and goals}
+	\item \textcolor{blue}{Be consistent with similar statements in higher-level specifications (e.g., the system requirements specification), if they exist}
 \end{enumerate}
 % End SubSection
 
@@ -65,15 +69,13 @@ This section of the SRS should provide an overview of the entire SRS.
 \label{sub:definitions_acronyms_and_abbreviations}
 % Begin SubSection
 \begin{enumerate}[a)]
-	\item Provide the definitions of all terms, acronyms, and abbreviations required to properly interpret the SRS
-	\item BEX.X
-	\item VPX.X
-	\item LCBO
-	\item Beer Store
+	\item \textbf{LCBO: } The Liquor Control Board of Ontario is a non-share capital provincial Crown corporation in Ontario, Canada.
+	\item \textbf{Beer Store: } The Beer Store is the trading name for Brewers Retail, a privately owned chain of retail outlets selling beer and other malt beverages in the province of Ontario, Canada, founded in 1927.
+	\item \textbf{Play Store: } Google Play Store or Google Play, and originally the Android Market, is a digital distribution platform operated by Google.
 \end{enumerate}
 % End SubSection
 
-\subsection{References}
+\subsection{\textcolor{blue}{References}}
 \label{sub:references}
 % Begin SubSection
 \begin{enumerate}[a)]
@@ -83,7 +85,7 @@ This section of the SRS should provide an overview of the entire SRS.
 \end{enumerate}
 % End SubSection
 
-\subsection{Overview}
+\subsection{\textcolor{blue}{Overview}}
 \label{sub:overview}
 % Begin SubSection
 \begin{enumerate}[a)]
@@ -166,9 +168,13 @@ This section of the SRS should describe the general factors that affect the prod
 
 % End Section
 
+% Begin Section
 \section{Functional Requirements}
 \label{sec:functional_requirements}
-% Begin Section
+The following section contains the details about all of the functional requirements about the system. The requirements are split up by viewpoints, and then again by business events, before they go into detail about the functions of the system.\\ 
+
+\textcolor{blue}{DON'T FORGET TO DELETE THIS USELESS AF PARAGRAPH BELOW}\\
+
 This section of the SRS should contain all of the software requirements to a level of detail sufficient to enable designers to design a system to satisfy those requirements, and testers to test that the system satisfies those requirements. Throughout this section, every stated requirement should be externally perceivable by users, operators, or other external systems. These requirements should include at a minimum a description of every input (stimulus) into the system, every output (response) from the system, and all functions performed by the system in response to an input or in support of an output.
 
 
@@ -179,22 +185,34 @@ This section of the SRS should contain all of the software requirements to a lev
 	\item User
 	
 	\begin{enumerate}[{BE1}.1]
-		\item Information about a Beer is Requested
+		\item Information About a Beer is Requested
 		\begin{enumerate}
 			\item The system shall display an input screen for the user, where the user will select from a list of predefined words for three separate categories: Colour of Beer, Taste of Beer, and Type of Beer.
 			\item The experts (each corresponding to one category) will use the input provided by the user to choose what kind of beer the user may be describing. These results will be displayed on a forum screen, split up by category.
-			\item Below the results chosen by the experts, the forum screen will contain a map of LCBO's and Beer Store's that are located within a 50km radius to the user's current location that offer each type of chosen beer by the experts.
-			\item \textcolor{red}{ Below the map, there will be three buttons. A button for Facebook, a button for Twitter, and a button for Instagram. If the user has their accounts synced to the system and they click one of the buttons, the system shall create a message (less than 140 characters) and a picture (of one of the beers chosen by the experts) to share to the corresponding social media account.}
+			\item Below the results chosen by the experts, the forum screen will contain a map of \underline{LCBO's} and \underline{Beer Store's} that are located within a 50km radius to the user's current location that offer each type of chosen beer by the experts.
+			\item \textcolor{red}{Below the map, there will be three buttons. A button for Facebook, a button for Twitter, and a button for Instagram. If the user has their accounts synced to the system and they click one of the buttons, the system shall create a message (less than 140 characters) and a picture (of one of the beers chosen by the experts) to share to the corresponding social media account.}
 		\end{enumerate}
 		
-		\item 
+		\item Application Downloaded from the \underline{Play Store}
+		\begin{enumerate}
+			\item The system shall tell the user that it requires location information. It will ask the user if they accept this condition. The application will only be downloaded if they select "Yes".
+			\item The system shall ask the user if they wish to sync their social media accounts (Facebook, Twitter, Instagram) to the application. If they select "Yes", then clicking the social media buttons on the forum screen will always open the respective social media website already logged in with the user's credentials. If they select "No", then selecting the social media buttons of the forum screen will ask the user to log on to the respective social media account every time.
+			\item The system shall encrypt any social media account credentials and information given to the application. 
+		\end{enumerate}
+		
+	\end{enumerate}
+	
+	\item Developer
+	
+	\begin{enumerate}[{BE2}.1]
+		\item \textcolor{blue}{\underline{LCBO} or \underline{Beer Store} Starts Offering a New Beer (??? I think the API will update automatically but whatever)}
 		\begin{enumerate}
 			\item 
 			\item 
-			\item
+			\item 
 		\end{enumerate}
 		
-		\item		
+		\item \textcolor{blue}{Ratings and Feedback are given to the Application (from \underline{Play Store}) (??? - again, not sure if this is the best)}
 		\begin{enumerate}
 			\item 
 			\item 
@@ -203,28 +221,14 @@ This section of the SRS should contain all of the software requirements to a lev
 		
 	\end{enumerate}
 	
-	\item Developer
+		\item \textcolor{blue}{Apparently "Application" can also be a viewpoints??? I don't think we need it.}
 	
-	\begin{enumerate}[{BE2}.1]
-		\item LCBO or Beer Store Starts Offering a New Beer
-		\begin{enumerate}
-			\item 
-			\item 
-			\item
-		\end{enumerate}
-		
-		\item 
-		\begin{enumerate}
-			\item 
-			\item 
-			\item
-		\end{enumerate}
-		
+	\begin{enumerate}[{BE3}.1]
 		\item
 		\begin{enumerate}
 			\item 
 			\item 
-			\item
+			\item 
 		\end{enumerate}
 		
 	\end{enumerate}
@@ -559,11 +563,25 @@ This section of the SRS should contain all of the software requirements to a lev
 
 % End Section
 
+% Begin Section
+\newpage
 \appendix
 \section{Division of Labour}
 \label{sec:division_of_labour}
-% Begin Section
-Include a Division of Labour sheet which indicates the contributions of each team member. This sheet must be signed by all team members.
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Team Member}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Student \\ Number\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Contribution}} & \multicolumn{1}{c|}{\textbf{Signature}} \\ \hline
+Arthur Chen &  &  &  \\ \hline
+Chris Campbell &  &  &  \\ \hline
+Johnny Endrizzi &  &  &  \\ \hline
+Mitchell Coovert &  &  &  \\ \hline
+Surinder Gill &  &  &  \\ \hline
+Terin Dhadda & 1312555 & Table of Contents and Sections 1, 3, A &  \\ \hline
+\end{tabular}
+\caption{Contributions and Signatures of Team Members}
+\end{table}
 % End Section
 
 \newpage
