@@ -420,7 +420,6 @@ This section of the SRS should contain all of the software requirements to a lev
 	\item The product shall be used in an environment with access to the internet
 	\item The product shall be used in an environment with the ability to connect to satellites 
 	for the use of the Google Maps API.
-	\item The product shall function in any environment that 
 \end{enumerate}
 % End SubSubSection
 
@@ -500,7 +499,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:integrity_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{SR}1. ]
-	\item The product shall be protected from intentional abuse.
+	\item \emph{N/A}
 \end{enumerate}
 % End SubSubSection
 
