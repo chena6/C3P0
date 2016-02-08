@@ -13,6 +13,8 @@
 \usepackage{extarrows}
 \usepackage{setspace}
 \usepackage{xcolor}
+\usepackage{grffile}
+
 %------------------------------------------------------------------------------
 
 % Header and Footer
@@ -79,6 +81,11 @@ The following section provide an overview of the entire software requirements sp
 \label{sub:references}
 % Begin SubSection
 \begin{enumerate}[a)]
+	\item \underline{Beer Buddy} app description on \underline{Google Play}  \\
+https://play.google.com/store/apps/details?id=com.s2it.beerbuddy\&hl=en
+	\item \underline{Untappd} app description on \underline{Google Play} \\
+https://play.google.com/store/apps/details?id=com.untappdllc.app\&hl=en
+	\\
 	\item Provide a complete list of all documents referenced elsewhere in the SRS
 	\item Identify each document by title, report number (if applicable), date, and publishing organization
 	\item Specify the sources from which the references can be obtained
@@ -89,8 +96,8 @@ The following section provide an overview of the entire software requirements sp
 \label{sub:overview}
 % Begin SubSection
 \begin{enumerate}[a)]
-	\item  The rest of the document will outline   general characteristics of the product , and the kind of environment it will be released it. What the product can do and is limited to will be explained more thoroughly as well as a complete description of its functional and non-functional requirements.
-	\item Explain how the SRS is organized
+	\item  The rest of the document will outline general characteristics of the product, and the kind of environment it will be released it. What the product can do and is limited to will be explained more thoroughly as well as a complete description of its functional and non-functional requirements.
+	\item Section 2 will describe the more general aspects of the product such as its relation with related products, as well as other systems. It will describe a summary of its functions and its interaction with the user as well constraints, assumptions, and potential requirements for future versions of the product. Section 3 will have a more extensive statement about the product's functional and non-functional requirements.
 \end{enumerate}
 % End SubSection
 
@@ -100,32 +107,39 @@ The following section provide an overview of the entire software requirements sp
 \label{sec:overall_description}
 % Begin Section
 
-This section of the SRS should describe the general factors that affect the product and its requirements. It does not state specific requirements; it provides a background for those requirements and makes them easier to understand.
+"What is this Beer?" provides users who are of legal age to purchase alcohol a way to identify a beer reflective of their preferences and provide them with a method of locating a place that supplies such beer. Locations are specific to \underline{LCBO} and \underline{Beer Store} and are powered by Google Maps API. The application should be usable by anybody with general knowledge of mobile technology. \\
+
+\textcolor{blue}{This section of the SRS should describe the general factors that affect the product and its requirements. It does not state specific requirements; it provides a background for those requirements and makes them easier to understand.}
 
 \subsection{Product Perspective}
 \label{sub:product_perspective}
 % Begin SubSection
 \begin{enumerate}[a)]
-	\item Put the product into perspective with other related products, i.e., context
-	\item If the product is independent and totally self-contained, it should be stated here
-	\item If the SRS defines a product that is a component of a larger system, as frequently occurs, then this subsection should relate the requirements of that larger system to functionality of the software and should identify interfaces between that system and the software
-	\item A block diagram showing the major components of the larger system, interconnections, and external interfaces can be helpful
+	\item There are other applications similar to "What is this Beer?" called "Untappd" and "Beer Buddy." Untappd allows the user to find nearby beers and bars and features based around that idea while Beer Buddy allows the user to find out more about a certain beer by UPC code. This application combines the most practical aspects of these applications such as outputting beer stores and beer information via search bar. 
+	\item This product is completely separate from the applications mentioned above and is a standalone product.
+	\item The product uses interfaces from systems such as Google Maps and LCBO in order to enable the functionality of the location feature and output beer information respectively. It also connects to social media networks such as Facebook, Twitter, and Instagram in order to share a message about the beer picked.
+	\item 
+
+		\includegraphics[scale=0.1]{Block Diagram/Block Diagram.jpg}
+
+	
 \end{enumerate}
 % End SubSection
 
 \subsection{Product Functions}
 \label{sub:product_functions}
 % Begin SubSection
+
+The software should be able to:
 \begin{enumerate}[a)]
-	\item Provide a summary of the major functions that the software will perform.
-	\begin{itemize}
-		\item \textbf{Example}: An SRS for an accounting program may use this part to address customer account maintenance, customer statement, and invoice preparation without mentioning the vast amount of detail that each of those functions requires.
-	\end{itemize}
-	\item Functions should be organized in a way that makes the list of functions understandable to the customer or to anyone else reading the document for the first time
-	\item Textual or graphical methods can be used to show the different functions and their relationships
-	\begin{itemize}
-		\item Such a diagram is not intended to show a design of a product, but simply shows the logical relationships among variables
-	\end{itemize} 
+
+\item Search for beers with particular attributes
+\item Output beer information of selected beer
+\item Locate closest locations to obtain selected beer
+\item Share the beer information on social media 
+\item Be downloaded on an android platform
+	
+	
 \end{enumerate}
 % End SubSection
 
@@ -579,7 +593,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \begin{tabular}{|l|l|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Team Member}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Student \\ Number\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Contribution}} & \multicolumn{1}{c|}{\textbf{Signature}} \\ \hline
-Arthur Chen &  &  &  \\ \hline
+Arthur Chen & 1306616  & Sections 1.4 to 2.3 &  \\ \hline
 Chris Campbell &  &  &  \\ \hline
 Johnny Endrizzi &  &  &  \\ \hline
 Mitchell Coovert &  &  &  \\ \hline
