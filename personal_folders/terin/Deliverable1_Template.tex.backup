@@ -89,7 +89,7 @@ The following section provide an overview of the entire software requirements sp
 \label{sub:overview}
 % Begin SubSection
 \begin{enumerate}[a)]
-	\item  The rest of the document will outline   general characteristics of the product , and the kind of environment it will be released it. What the product can do and is limited to will be explained more thoroughly as well as a complete description of its functional and non-functional requirements.
+	\item Describe what the rest of the SRS contains
 	\item Explain how the SRS is organized
 \end{enumerate}
 % End SubSection
@@ -420,7 +420,6 @@ This section of the SRS should contain all of the software requirements to a lev
 	\item The product shall be used in an environment with access to the internet
 	\item The product shall be used in an environment with the ability to connect to satellites 
 	for the use of the Google Maps API.
-	\item The product shall function in any environment that 
 \end{enumerate}
 % End SubSubSection
 
@@ -500,7 +499,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:integrity_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{SR}1. ]
-	\item The product shall be protected from intentional abuse.
+	\item \emph{N/A}
 \end{enumerate}
 % End SubSubSection
 
