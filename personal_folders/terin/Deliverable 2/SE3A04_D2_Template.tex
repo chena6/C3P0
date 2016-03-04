@@ -33,49 +33,47 @@
 \begin{document}
 
 \maketitle	
+\newpage
+\tableofcontents
+\listoftables
+\newpage
 
+% Introduction
+%------------------------------------------------------------------------------
 \section{Introduction}
 \label{sec:introduction}
-% Begin Section
-
-This section should provide an brief overview of the entire document.
+The following section provides a brief overview of the entire document.
 
 \subsection{Purpose}
 \label{sub:purpose}
-% Begin SubSection
-\begin{enumerate}[a)]
-	\item Delineate the purpose of the document
-	\item Specify the intended audience for the document
-\end{enumerate}
-% End SubSection
+The purpose of this document is to lay out the high level architectural design of the "BEER'D" application. It will first give a description of the system and a general overview of what it is for, how it is expected to be used, and why it is being developed. It also contains information about the variety of use cases for the application, an analysis class diagram, a breakdown of the intended architecture design, and finally a class responsibility collaboration breakdown. This document is intended primarily for the developers of the application, the professor, and the teaching assistants.
 
 \subsection{System Description}
 \label{sub:system_description}
-% Begin SubSection
-\begin{enumerate}[a)]
-	\item Give a brief description of the system. This could be a paragraph or two to give some context to this document.
-\end{enumerate}
-% End SubSection
+The "BEER'D" system is a mobile application that aims to solve the question: "What beer is this?" This application is primarily being developed as a project for the third year Software Architecture class (course code SE 3A04) taught at McMaster University. A team of 6 students will design, develop, and create the application.\\
+\\
+The "BEER'D" application will take specific inputs from a user. Based on these inputs, varying "experts" will attempt to analyse and come up with their best prediction (based on data provided by publicly available API's) as to which beer the inputs may be identifying. The application will return and display a list of possible answers in a forum. Within this forum, users will also be able to share their answers on popular social media networks or find local stores which sell the beers referred to in the answers - based on their current location in an map.
 
 \subsection{Overview}
 \label{sub:overview}
-% Begin SubSection
-\begin{enumerate}[a)]
-	\item Describe what the rest of the document contains 
-	\item Explain how the document is organised
+The rest of the document is split up into four main sections:
+\begin{enumerate}[-]
+	\item The first section, Use Case Diagram, will contain each use case associated with the application. 
+	\item The second section, Analysis Class Diagram, will contain the analysis class diagram for the application based upon the use case diagram.
+	\item The third section, Architectural Design, will provide an overview of the overall architectural design for the application. It will first identify and provide reasoning for the chosen software architecture. Then, it explain the division of the system into subsystems and describe each subsystem.
+	\item The fourth and final section, Class Responsibility Collaboration, will contain the "CRC Cards" of the application.
 \end{enumerate}
-% End SubSection
 
-% End Section
-
+% Use Case Diagram
+%------------------------------------------------------------------------------
 \section{Use Case Diagram}
 \label{sec:use_case_diagram}
-% Begin Section
-This section should provide a use case diagram for your application. 
+The following section provides a use case diagram for the application. 
+
 \begin{enumerate}[a)]
 	\item Each use case appearing in the diagram should be accompanied by a text description. 
 \end{enumerate}
-% End Section
+
 
 \section{Analysis Class Diagram}
 \label{sec:analysis_class_diagram}
