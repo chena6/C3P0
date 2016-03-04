@@ -246,7 +246,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:appearance_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{LF}1. ]
-	\item Each menu shall be clearly labeled and each page shall be accessible.
+	\item \textcolor{red}{Each menu shall be clearly labeled.}
 \end{enumerate}
 % End SubSubSection
 
@@ -254,7 +254,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:style_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{LF}1. ]
-	\item "What is this Beer" shall operate with a simple GUI, and easy to understand layout.
+	\item \textcolor{red}{\emph{N/A}}
 \end{enumerate}
 % End SubSubSection
 
@@ -268,7 +268,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:ease_of_use_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item The application shall be eary for a person aged 19+ in able condition to understand and use all of its features.
+	\item The application shall \textcolor{red}{be available} for a person aged 19+ in able condition to understand and use all of its features.
 \end{enumerate}
 % End SubSubSection
 
@@ -276,7 +276,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:personalization_and_internationalization_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item The application shall retain the users preferences.
+	\item The application shall \textcolor{red}{retain the users previous location, and search settings.}
 \end{enumerate}
 % End SubSubSection
 
@@ -294,16 +294,13 @@ The following section contains the details about all of the functional requireme
 \begin{enumerate}[{UH}1. ]
 	\item "What is this Beer" shall use words and symbols understandable by its user community.
 \end{enumerate}
-\begin{enumerate}[{UH}2. ]
-	\item "What is this Beer" shall hide details of its constructions from the user.
-\end{enumerate}
 % End SubSubSection
 
 \subsubsection{Accessibility Requirements}
 \label{ssub:accessibility_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item The application shall be useable by users with any ability.
+	\item \textcolor{red}{\emph{N/A}}
 \end{enumerate}
 % End SubSubSection
 
@@ -344,7 +341,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:reliability_and_availability_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item The application will be usable for 24 hours per day, 365 days per year (Beer Store/LCBO availability may vary by user).
+	\item \textcolor{red}{The application to be unavaiable for use for no more than 2 days per year} (Beer Store/LCBO availability may vary by user).
 \end{enumerate}
 % End SubSubSection
 
@@ -360,7 +357,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:capacity_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item "What is this Beer" shall accomodate its users data needs.
+	\item \textcolor{red}{The application shall accomodate up to 1000 simultaneous users at a time.}
 \end{enumerate}
 % End SubSubSection
 
@@ -368,7 +365,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:scalability_or_extensibility_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item The application shall be able to process no less than 100 user interactions per minute.
+	\item The application shall be able to process no less than \textcolor{red}{50 controller changes, or identification requests per minute.}
 \end{enumerate}
 % End SubSubSection
 
@@ -377,6 +374,46 @@ The following section contains the details about all of the functional requireme
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
 	\item The application should operate as long as it is installed on a users device.
+\end{enumerate}
+% End SubSubSection
+
+% End SubSection
+
+\subsection{Operational and Environmental Requirements}
+\label{sub:operational_and_environmental_requirements}
+% Begin SubSection
+
+\subsubsection{Expected Physical Environment}
+\label{ssub:expected_physical_environment}
+% Begin SubSubSection
+\begin{enumerate}[{OE}1. ]
+	\item The product shall be used in an environment with access to the internet
+	\item The product shall function in any environment that the device hardware can function.
+\end{enumerate}
+% End SubSubSection
+
+\subsubsection{Requirements for Interfacing with Adjacent Systems}
+\label{ssub:requirements_for_interfacing_with_adjacent_systems}
+% Begin SubSubSection
+\begin{enumerate}[{SR}1. ]
+	\item The product shall be connected to the internet and have access to Google Maps API.
+\end{enumerate}
+% End SubSubSection
+
+\subsubsection{Productization Requirements}
+\label{ssub:productization_requirements}
+% Begin SubSubSection
+\begin{enumerate}[{OE}1. ]
+	\item The product will be released on the Google Play Store for all Android devices.
+	\item The product shall be distributed as an Android Application Package(.apk) file.
+\end{enumerate}
+% End SubSubSection
+
+\subsubsection{Release Requirements}
+\label{ssub:release_requirements}
+% Begin SubSubSection
+\begin{enumerate}[{OE}1. ]
+	\item The product will have one single release date on April 3, 2016.
 \end{enumerate}
 % End SubSubSection
 

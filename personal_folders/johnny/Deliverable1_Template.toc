@@ -21,7 +21,7 @@
 \contentsline {subsubsection}{\numberline {4.2.2}Personalization and Internationalization Requirements}{7}
 \contentsline {subsubsection}{\numberline {4.2.3}Learning Requirements}{7}
 \contentsline {subsubsection}{\numberline {4.2.4}Understandability and Politeness Requirements}{7}
-\contentsline {subsubsection}{\numberline {4.2.5}Accessibility Requirements}{7}
+\contentsline {subsubsection}{\numberline {4.2.5}Accessibility Requirements}{8}
 \contentsline {subsection}{\numberline {4.3}Performance Requirements}{8}
 \contentsline {subsubsection}{\numberline {4.3.1}Speed and Latency Requirements}{8}
 \contentsline {subsubsection}{\numberline {4.3.2}Safety-Critical Requirements}{8}
@@ -35,7 +35,7 @@
 \contentsline {subsubsection}{\numberline {4.4.1}Expected Physical Environment}{8}
 \contentsline {subsubsection}{\numberline {4.4.2}Requirements for Interfacing with Adjacent Systems}{8}
 \contentsline {subsubsection}{\numberline {4.4.3}Productization Requirements}{8}
-\contentsline {subsubsection}{\numberline {4.4.4}Release Requirements}{8}
+\contentsline {subsubsection}{\numberline {4.4.4}Release Requirements}{9}
 \contentsline {subsection}{\numberline {4.5}Maintainability and Support Requirements}{9}
 \contentsline {subsubsection}{\numberline {4.5.1}Maintenance Requirements}{9}
 \contentsline {subsubsection}{\numberline {4.5.2}Supportability Requirements}{9}
@@ -49,7 +49,7 @@
 \contentsline {subsection}{\numberline {4.7}Cultural and Political Requirements}{9}
 \contentsline {subsubsection}{\numberline {4.7.1}Cultural Requirements}{9}
 \contentsline {subsubsection}{\numberline {4.7.2}Political Requirements}{9}
-\contentsline {subsection}{\numberline {4.8}Legal Requirements}{9}
-\contentsline {subsubsection}{\numberline {4.8.1}Compliance Requirements}{9}
+\contentsline {subsection}{\numberline {4.8}Legal Requirements}{10}
+\contentsline {subsubsection}{\numberline {4.8.1}Compliance Requirements}{10}
 \contentsline {subsubsection}{\numberline {4.8.2}Standards Requirements}{10}
 \contentsline {section}{\numberline {A}Division of Labour}{11}
