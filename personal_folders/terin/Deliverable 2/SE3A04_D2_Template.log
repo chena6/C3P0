@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.7)  4 MAR 2016 15:12
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.28)  4 MAR 2016 15:12
->>>>>>> 03df708da2b08f184bcd8035218b59cf3303589b
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.7)  4 MAR 2016 15:23
 entering extended mode
 **SE3A04_D2_Template.tex
 (SE3A04_D2_Template.tex
@@ -249,13 +245,8 @@ LaTeX Font Info:    ... okay on input line 35.
 \makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks30
 )
-<<<<<<< HEAD
-LaTeX Font Info:    Try loading font information for U+msa on input line 35.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-=======
 LaTeX Font Info:    Try loading font information for U+msa on input line 37.
- ("C:\Program Files (x86)\Miktex\tex\latex\amsfonts\umsa.fd"
->>>>>>> 03df708da2b08f184bcd8035218b59cf3303589b
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 37.
@@ -289,10 +280,9 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [6]
 (SE3A04_D2_Template.aux) ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
  2834 strings out of 493698
  36351 string characters out of 3144409
- 101193 words of memory out of 3000000
+ 101261 words of memory out of 3000000
  6121 multiletter control sequences out of 15000+200000
  11849 words of font info for 46 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -304,24 +294,7 @@ mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SE3A04_D2_Template.pdf (6 pages, 106758 bytes).
-=======
- 2832 strings out of 493673
- 36545 string characters out of 3143150
- 101538 words of memory out of 3000000
- 6141 multiletter control sequences out of 15000+200000
- 11849 words of font info for 46 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
- 27i,13n,43p,620b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/Miktex/fonts/type1/public/ams
-fonts/cm/cmbx10.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Pro
-gram Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
-iles (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on SE3A04_D2_Template.pdf (6 pages, 108256 bytes).
->>>>>>> 03df708da2b08f184bcd8035218b59cf3303589b
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
