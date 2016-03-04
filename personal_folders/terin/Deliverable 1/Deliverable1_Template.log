@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.28)  4 MAR 2016 14:45
+=======
 This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.7)  4 MAR 2016 14:51
+>>>>>>> 55d2af71e6b3d1e7561a87b3f3b39e5edd75dd10
 entering extended mode
 **Deliverable1_Template.tex
 (Deliverable1_Template.tex
@@ -346,17 +350,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
-[6]
+[6] [7]
 
 LaTeX Warning: The counter will not be printed.
-             The label is: {UH}2.\space  on input line 301.
+             The label is: {UH}2.\space  on input line 314.
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: {PR}2.\space  on input line 326.
+             The label is: {PR}2.\space  on input line 339.
 
-[7] [8] [9] [10] (Deliverable1_Template.aux) ) 
+[8] [9] [10] [11] (Deliverable1_Template.aux) ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
+ 3691 strings out of 493673
+ 49157 string characters out of 3143150
+ 125473 words of memory out of 3000000
+ 6973 multiletter control sequences out of 15000+200000
+ 11955 words of font info for 47 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 36i,14n,43p,601b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/Miktex/f
+onts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/Miktex/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/Miktex/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/a
+msfonts/cm/cmr12.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts
+/cm/cmr17.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on Deliverable1_Template.pdf (11 pages, 334529 bytes).
+=======
  3694 strings out of 493698
  48911 string characters out of 3144409
  125395 words of memory out of 3000000
@@ -371,8 +392,9 @@ msfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on Deliverable1_Template.pdf (10 pages, 334140 bytes).
+>>>>>>> 55d2af71e6b3d1e7561a87b3f3b39e5edd75dd10
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
