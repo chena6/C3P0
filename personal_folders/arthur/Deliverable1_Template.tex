@@ -14,6 +14,7 @@
 \usepackage{setspace}
 \usepackage{xcolor}
 \usepackage{grffile}
+\usepackage[normalem]{ulem}
 
 %------------------------------------------------------------------------------
 
@@ -26,9 +27,11 @@
 
 % Title Details
 %------------------------------------------------------------------------------
-\title{Deliverable \#1 Template}
-\author{SE 3A04: Software Design II -- Large System Design}
-\date{}                               
+\title{Deliverable \#1 - Software Requirements Specification \\
+	SE 3A04: Software Design II -- Large System Design}
+\author{Chen, Arthur \and Campbell, Christopher \and Endrizzi, Johnny \\ 
+\and Coovert, Mitchell \and Gill, Surinder \and Dhadda, Terin}
+\date{February 8, 2016}                               
 %------------------------------------------------------------------------------
 
 % Document
@@ -50,30 +53,19 @@ The following section provides an overview of the entire software requirements s
 \subsection{Purpose}
 \label{sub:purpose}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item The purpose this document is to outline the requirements for the \textcolor{blue}{"What is this Beer?"} application. This program will be developed as a mobile android application and will be available on the \underline{Play Store}.
-	\item This document is intended for the developers of the application, Professor Ridha Khedri, teaching assistants for SE 3A04, and any other software engineers or students interested in this project.
-\end{enumerate}
+The purpose this document is to outline the requirements for the \textcolor{red}{"BEER'D"} application. This program will be developed as a mobile android application and will be available on the Google Play Store. This document is intended for the developers of the application, Professor Ridha Khedri, teaching assistants for SE 3A04, and any other software engineers or students interested in this project.
 % End SubSection
 
 \subsection{Scope}
 \label{sub:scope}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item The software product to be produced is known as the \textcolor{blue}{"What is this Beer?"} mobile application.
-	\item This application will allow a user to identify a certain type of beer. This will be accomplished by three experts on the colour of beer, taste of beer, and type of beer, who will form their best choice as to what kind of beer the user describes when selecting some predefined inputs. The application will display these results, display a map of nearby \underline{LCBO's} and \underline{Beer Store's} according to the user's current location, \textcolor{red}{as well as some social media sharing features.}
-
-\end{enumerate}
+The software product to be produced is known as the \textcolor{red}{"BEER'D"} mobile application. This application will allow a user to identify a certain type of beer. This will be accomplished by three experts on the colour of beer, taste of beer, and type of beer, who will form their best choice as to what kind of beer the user describes when selecting some predefined inputs. The application will display these results, display a map of nearby LCBO's and Beer Store's according to the user's current location, as well as some social media sharing features.
 % End SubSection
 
 \subsection{Definitions, Acronyms, and Abbreviations}
 \label{sub:definitions_acronyms_and_abbreviations}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item \textbf{LCBO: } The Liquor Control Board of Ontario is a non-share capital provincial Crown corporation in Ontario, Canada.
-	\item \textbf{Beer Store: } The Beer Store is the trading name for Brewers Retail, a privately owned chain of retail outlets selling beer and other malt beverages in the province of Ontario, Canada, founded in 1927.
-	\item \textbf{Play Store: } Google Play Store or Google Play, and originally the Android Market, is a digital distribution platform operated by Google.
-\end{enumerate}
+	\textcolor{red}{N/A}
 % End SubSection
 
 \subsection{{References}}
@@ -85,9 +77,7 @@ https://play.google.com/store/apps/details?id=com.s2it.beerbuddy\&hl=en
 	\item \underline{Untappd} app description on \underline{Google Play} \\
 https://play.google.com/store/apps/details?id=com.untappdllc.app\&hl=en
 	\\
-	\item Provide a complete list of all documents referenced elsewhere in the SRS
-	\item Identify each document by title, report number (if applicable), date, and publishing organization
-	\item Specify the sources from which the references can be obtained
+	
 \end{enumerate}
 % End SubSection
 
@@ -135,8 +125,7 @@ The software should be able to:
 \item Output beer information of selected beer
 \item Locate closest locations to obtain selected beer
 \item Share the beer information on social media 
-\item Be downloaded on an android platform
-	
+
 	
 \end{enumerate}
 % End SubSection
@@ -146,7 +135,7 @@ The software should be able to:
 % Begin SubSection
 \begin{enumerate}
 
-	\item The User will need a basic knowledge of smartphone use to be able to download, run and use the application. 
+	\item The User will need a basic knowledge of smartphone use: know where the Playstore is, know how to download applications off of the playstore and follow instructions in the application.
 	\item The User also needs to have enough knowledge of beer to identify the taste and type desired.
 
 \end{enumerate}
@@ -157,10 +146,9 @@ The software should be able to:
 % Begin SubSection
 \begin{enumerate}
 
-	\item The application requires a desired input that can be predicted by the application.
-	\item The information found within the database will limit the information and locations that may be provided to the user.
+	\item The application can only search based on specific categories of keywords.
 	\item Location functionality only works if location is enabled by the client.
-	\item The types of beer offered at local store locations will vary.
+	\item The types of beer offered at local store locations will vary and will limit the amount of information the application is able to output.
 	
 \end{enumerate}
 % End SubSection
@@ -170,8 +158,8 @@ The software should be able to:
 % Begin SubSection
 \begin{enumerate}
 
-\item The application depends on information provided by the beer API used.
-
+\item The application depends on information provided by the beer API used such as beer brand, beer taste, cost, etc.
+\item The application requires a desired input to be predicted by the application.
 
 \end{enumerate}
 % End SubSection
@@ -192,6 +180,19 @@ The software should be able to:
 \label{sec:functional_requirements}
 The following section contains the details about all of the functional requirements about the system. The requirements are split up by viewpoints, and then again by business events, before they go into detail about the functions of the system.\\ 
 
+% BUSINESS EVENTS
+% New beers are added or updated in the API.
+% Developer wants to change an expert.
+% User wants to request information about a beer.
+% User wants to review previous searches.
+% User wants to get "beer'd" on social media. 
+% User wants to view general information about a beer.
+% User wants to sync social media accounts.
+
+% VIEWPOINTS
+% User
+% Developer
+% Administrator (switches experts)
 
 \begin{enumerate}[{VP}1.]
 	\item User
@@ -202,7 +203,7 @@ The following section contains the details about all of the functional requireme
 			\item The system shall display an input screen for the user, where the user will select from a list of predefined words for three separate categories: Colour of Beer, Taste of Beer, and Type of Beer.
 			\item The experts (each corresponding to one category) will use the input provided by the user to choose what kind of beer the user may be describing. These results will be displayed on a forum screen, split up by category.
 			\item Below the results chosen by the experts, the forum screen will contain a map of \underline{LCBO's} and \underline{Beer Store's} that are located within a 50km radius to the user's current location that offer each type of chosen beer by the experts.
-			\item \textcolor{red}{Below the map, there will be three buttons. A button for Facebook, a button for Twitter, and a button for Instagram. If the user has their accounts synced to the system and they click one of the buttons, the system shall create a message (less than 140 characters) and a picture (of one of the beers chosen by the experts) to share to the corresponding social media account.}
+			\item \textcolor{red}{Below the map, there will be three forms of selection: a selection for Facebook, Twitter, and Instagram. If the user has their accounts synced to the system and they chooses one of these selections, the system shall create a message (less than 140 characters) and a picture (of one of the beers chosen by the experts) to share to the corresponding social media account.}
 		\end{enumerate}
 		
 		\item Application Downloaded from the \underline{Play Store}
@@ -231,33 +232,8 @@ The following section contains the details about all of the functional requireme
 		
 	\end{enumerate}
 	
-
 \end{enumerate}
-
 % End Section
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 \section{Non-Functional Requirements}
 \label{sec:non-functional_requirements}
