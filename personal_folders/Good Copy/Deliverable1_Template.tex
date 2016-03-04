@@ -15,6 +15,7 @@
 \usepackage{xcolor}
 \usepackage{grffile}
 \usepackage[normalem]{ulem}
+\usepackage{textcomp}
 
 %------------------------------------------------------------------------------
 
@@ -180,51 +181,66 @@ The software should be able to:
 \label{sec:functional_requirements}
 The following section contains the details about all of the functional requirements about the system. The requirements are split up by viewpoints, and then again by business events, before they go into detail about the functions of the system.\\ 
 
-% BUSINESS EVENTS
-% New beers are added or updated in the API.
-% Developer wants to change an expert.
-% User wants to request information about a beer.
-% User wants to review previous searches.
-% User wants to get "beer'd" on social media. 
-% User wants to view general information about a beer.
-% User wants to sync social media accounts.
-
-% VIEWPOINTS
-% User
-% Developer
-% Administrator (switches experts)
 
 \begin{enumerate}[{VP}1.]
 	\item User
 	
 	\begin{enumerate}[{BE1}.1]
-		\item Information About a Beer is Requested
+		
+		\item User wants to request information about a beer
 		\begin{enumerate}
-			\item The system shall display an input screen for the user, where the user will select from a list of predefined words for three separate categories: Colour of Beer, Taste of Beer, and Type of Beer.
-			\item The experts (each corresponding to one category) will use the input provided by the user to choose what kind of beer the user may be describing. These results will be displayed on a forum screen, split up by category.
-			\item Below the results chosen by the experts, the forum screen will contain a map of \underline{LCBO's} and \underline{Beer Store's} that are located within a 50km radius to the user's current location that offer each type of chosen beer by the experts.
+			\item The system shall display an input screen for the user, where the user will select from a list of predefined words for three separate categories.
+			\item The system will have the experts (each corresponding to one category) use the input provided by the user to predict what kind of beer the user may be describing.
+			\item The system will create a forum screen which will contain a map of LCBO\textquotesingle s and Beer Store\textquotesingle s that are located within a 50km radius to the user\textquotesingle s current location that offer each type of chosen beer by the experts.
 			\item \textcolor{red}{Below the map, there will be three forms of selection: a selection for Facebook, Twitter, and Instagram. If the user has their accounts synced to the system and they chooses one of these selections, the system shall create a message (less than 140 characters) and a picture (of one of the beers chosen by the experts) to share to the corresponding social media account.}
+			
 		\end{enumerate}
 		
-		\item Application Downloaded from the \underline{Play Store}
+		\item User wants to review search history
 		\begin{enumerate}
-			\item The system shall tell the user that it requires location information. It will ask the user if they accept this condition. The application will only be downloaded if they select "Yes".
-			\item The system shall ask the user if they wish to sync their social media accounts (Facebook, Twitter, Instagram) to the application. If they select "Yes", then clicking the social media buttons on the forum screen will always open the respective social media website already logged in with the user's credentials. If they select "No", then selecting the social media buttons of the forum screen will ask the user to log on to the respective social media account every time.
-			\item The system shall encrypt any social media account credentials and information given to the application. 
+			\item The user must be able to review previous inputs for their searches.
+			\item The system must hold data on previous searched entries in memory.
 		\end{enumerate}
+		
+		\item User wants to share beer results
+		\begin{enumerate}
+			\item The system must display an error if unable to connect to a social media outlet.
+			\item The system if successful, must post the results of the user search on user controlled social media outlet(s).
+		\end{enumerate}
+		
+		\item User wants to access general information 
+		\begin{enumerate}
+			\item The system must display an about screen containing information about beers.
+		\end{enumerate}
+		
+		\item User wants to sync social media accounts 
+		\begin{enumerate}
+			\item The system must be allow to login to a social media account.
+			\item The system must display an error if unable to to connect to a social media connect.
+			\item The system must allow a success message once connected to a social media account.
+			\item The system must encrypt login credentials when connecting to a social media account.
+		\end{enumerate}
+		
+		
 		
 	\end{enumerate}
 	
 	\item Developer
 	
 	\begin{enumerate}[{BE2}.1]
-		\item {\underline{LCBO} or \underline{Beer Store} Starts Offers New Beer}
+		\item Developer updates the API(s).
 		\begin{enumerate}
-			\item The system shall request and send information to the beer API. 
-			\item The system shall update it its beer selection based on the beer provided in the API.
+			\item The system must be able to request and send information to the desired API(s).
+			\item The system shall update it's beer selection based on the data provided in the API(s).
 		\end{enumerate}
 		
-		\item {Ratings and Feedback are given to the Application) }
+		\item Developer wants to add/remove or change an expert.
+		\begin{enumerate}
+			\item The system must be able to support addition or removal of an expert as requested.
+			\item The system must be able to support a swap or change of an expert.
+		\end{enumerate}
+		
+		\item {Ratings and Feedback are given to the Application }
 		\begin{enumerate}
 			\item The system shall prompt user to enter for a rating out of 5 after the service is used. 
 			\item The system shall send these results to the \underline{Play Store} when there is a valid internet connection.
@@ -232,7 +248,9 @@ The following section contains the details about all of the functional requireme
 		
 	\end{enumerate}
 	
+	
 \end{enumerate}
+
 % End Section
 
 \section{Non-Functional Requirements}

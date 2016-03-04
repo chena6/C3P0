@@ -24,8 +24,8 @@
 \contentsline {subsubsection}{\numberline {4.2.5}Accessibility Requirements}{7}
 \contentsline {subsection}{\numberline {4.3}Performance Requirements}{7}
 \contentsline {subsubsection}{\numberline {4.3.1}Speed and Latency Requirements}{7}
-\contentsline {subsubsection}{\numberline {4.3.2}Safety-Critical Requirements}{7}
-\contentsline {subsubsection}{\numberline {4.3.3}Precision or Accuracy Requirements}{7}
+\contentsline {subsubsection}{\numberline {4.3.2}Safety-Critical Requirements}{8}
+\contentsline {subsubsection}{\numberline {4.3.3}Precision or Accuracy Requirements}{8}
 \contentsline {subsubsection}{\numberline {4.3.4}Reliability and Availability Requirements}{8}
 \contentsline {subsubsection}{\numberline {4.3.5}Robustness or Fault-Tolerance Requirements}{8}
 \contentsline {subsubsection}{\numberline {4.3.6}Capacity Requirements}{8}
@@ -38,7 +38,7 @@
 \contentsline {subsubsection}{\numberline {4.4.4}Release Requirements}{8}
 \contentsline {subsection}{\numberline {4.5}Operational and Environmental Requirements}{8}
 \contentsline {subsubsection}{\numberline {4.5.1}Expected Physical Environment}{8}
-\contentsline {subsubsection}{\numberline {4.5.2}Requirements for Interfacing with Adjacent Systems}{8}
+\contentsline {subsubsection}{\numberline {4.5.2}Requirements for Interfacing with Adjacent Systems}{9}
 \contentsline {subsubsection}{\numberline {4.5.3}Productization Requirements}{9}
 \contentsline {subsubsection}{\numberline {4.5.4}Release Requirements}{9}
 \contentsline {subsection}{\numberline {4.6}Maintainability and Support Requirements}{9}
@@ -51,8 +51,8 @@
 \contentsline {subsubsection}{\numberline {4.7.3}Privacy Requirements}{9}
 \contentsline {subsubsection}{\numberline {4.7.4}Audit Requirements}{9}
 \contentsline {subsubsection}{\numberline {4.7.5}Immunity Requirements}{9}
-\contentsline {subsection}{\numberline {4.8}Cultural and Political Requirements}{9}
-\contentsline {subsubsection}{\numberline {4.8.1}Cultural Requirements}{9}
+\contentsline {subsection}{\numberline {4.8}Cultural and Political Requirements}{10}
+\contentsline {subsubsection}{\numberline {4.8.1}Cultural Requirements}{10}
 \contentsline {subsubsection}{\numberline {4.8.2}Political Requirements}{10}
 \contentsline {subsection}{\numberline {4.9}Legal Requirements}{10}
 \contentsline {subsubsection}{\numberline {4.9.1}Compliance Requirements}{10}
