@@ -15,6 +15,7 @@
 \usepackage{xcolor}
 \usepackage{grffile}
 \usepackage[normalem]{ulem}
+\usepackage{textcomp}
 
 %------------------------------------------------------------------------------
 
@@ -180,51 +181,66 @@ The software should be able to:
 \label{sec:functional_requirements}
 The following section contains the details about all of the functional requirements about the system. The requirements are split up by viewpoints, and then again by business events, before they go into detail about the functions of the system.\\ 
 
-% BUSINESS EVENTS
-% New beers are added or updated in the API.
-% Developer wants to change an expert.
-% User wants to request information about a beer.
-% User wants to review previous searches.
-% User wants to get "beer'd" on social media. 
-% User wants to view general information about a beer.
-% User wants to sync social media accounts.
-
-% VIEWPOINTS
-% User
-% Developer
-% Administrator (switches experts)
 
 \begin{enumerate}[{VP}1.]
 	\item User
 	
 	\begin{enumerate}[{BE1}.1]
-		\item Information About a Beer is Requested
+		
+		\item User wants to request information about a beer
 		\begin{enumerate}
-			\item The system shall display an input screen for the user, where the user will select from a list of predefined words for three separate categories: Colour of Beer, Taste of Beer, and Type of Beer.
-			\item The experts (each corresponding to one category) will use the input provided by the user to choose what kind of beer the user may be describing. These results will be displayed on a forum screen, split up by category.
-			\item Below the results chosen by the experts, the forum screen will contain a map of \underline{LCBO's} and \underline{Beer Store's} that are located within a 50km radius to the user's current location that offer each type of chosen beer by the experts.
+			\item The system shall display an input screen for the user, where the user will select from a list of predefined words for three separate categories.
+			\item The system will have the experts (each corresponding to one category) use the input provided by the user to predict what kind of beer the user may be describing.
+			\item The system will create a forum screen which will contain a map of LCBO\textquotesingle s and Beer Store\textquotesingle s that are located within a 50km radius to the user\textquotesingle s current location that offer each type of chosen beer by the experts.
 			\item \textcolor{red}{Below the map, there will be three forms of selection: a selection for Facebook, Twitter, and Instagram. If the user has their accounts synced to the system and they chooses one of these selections, the system shall create a message (less than 140 characters) and a picture (of one of the beers chosen by the experts) to share to the corresponding social media account.}
+			
 		\end{enumerate}
 		
-		\item Application Downloaded from the \underline{Play Store}
+		\item User wants to review search history
 		\begin{enumerate}
-			\item The system shall tell the user that it requires location information. It will ask the user if they accept this condition. The application will only be downloaded if they select "Yes".
-			\item The system shall ask the user if they wish to sync their social media accounts (Facebook, Twitter, Instagram) to the application. If they select "Yes", then clicking the social media buttons on the forum screen will always open the respective social media website already logged in with the user's credentials. If they select "No", then selecting the social media buttons of the forum screen will ask the user to log on to the respective social media account every time.
-			\item The system shall encrypt any social media account credentials and information given to the application. 
+			\item The user must be able to review previous inputs for their searches.
+			\item The system must hold data on previous searched entries in memory.
 		\end{enumerate}
+		
+		\item User wants to share beer results
+		\begin{enumerate}
+			\item The system must display an error if unable to connect to a social media outlet.
+			\item The system if successful, must post the results of the user search on user controlled social media outlet(s).
+		\end{enumerate}
+		
+		\item User wants to access general information 
+		\begin{enumerate}
+			\item The system must display an about screen containing information about beers.
+		\end{enumerate}
+		
+		\item User wants to sync social media accounts 
+		\begin{enumerate}
+			\item The system must be allow to login to a social media account.
+			\item The system must display an error if unable to to connect to a social media connect.
+			\item The system must allow a success message once connected to a social media account.
+			\item The system must encrypt login credentials when connecting to a social media account.
+		\end{enumerate}
+		
+		
 		
 	\end{enumerate}
 	
 	\item Developer
 	
 	\begin{enumerate}[{BE2}.1]
-		\item {\underline{LCBO} or \underline{Beer Store} Starts Offers New Beer}
+		\item Developer updates the API(s).
 		\begin{enumerate}
-			\item The system shall request and send information to the beer API. 
-			\item The system shall update it its beer selection based on the beer provided in the API.
+			\item The system must be able to request and send information to the desired API(s).
+			\item The system shall update it's beer selection based on the data provided in the API(s).
 		\end{enumerate}
 		
-		\item {Ratings and Feedback are given to the Application) }
+		\item Developer wants to add/remove or change an expert.
+		\begin{enumerate}
+			\item The system must be able to support addition or removal of an expert as requested.
+			\item The system must be able to support a swap or change of an expert.
+		\end{enumerate}
+		
+		\item {Ratings and Feedback are given to the Application }
 		\begin{enumerate}
 			\item The system shall prompt user to enter for a rating out of 5 after the service is used. 
 			\item The system shall send these results to the \underline{Play Store} when there is a valid internet connection.
@@ -232,7 +248,9 @@ The following section contains the details about all of the functional requireme
 		
 	\end{enumerate}
 	
+	
 \end{enumerate}
+
 % End Section
 
 \section{Non-Functional Requirements}
@@ -246,7 +264,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:appearance_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{LF}1. ]
-	\item Each menu shall be clearly labeled and each page shall be accessible.
+	\item \textcolor{red}{Each menu shall be clearly labeled.}
 \end{enumerate}
 % End SubSubSection
 
@@ -254,7 +272,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:style_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{LF}1. ]
-	\item "What is this Beer" shall operate with a simple GUI, and easy to understand layout.
+	\item \textcolor{red}{\emph{N/A}}
 \end{enumerate}
 % End SubSubSection
 
@@ -268,7 +286,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:ease_of_use_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item The application shall be eary for a person aged 19+ in able condition to understand and use all of its features.
+	\item The application shall \textcolor{red}{be available} for a person aged 19+ in able condition to understand and use all of its features.
 \end{enumerate}
 % End SubSubSection
 
@@ -276,7 +294,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:personalization_and_internationalization_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item The application shall retain the users preferences.
+	\item The application shall \textcolor{red}{retain the users previous location, and search settings.}
 \end{enumerate}
 % End SubSubSection
 
@@ -294,16 +312,13 @@ The following section contains the details about all of the functional requireme
 \begin{enumerate}[{UH}1. ]
 	\item "What is this Beer" shall use words and symbols understandable by its user community.
 \end{enumerate}
-\begin{enumerate}[{UH}2. ]
-	\item "What is this Beer" shall hide details of its constructions from the user.
-\end{enumerate}
 % End SubSubSection
 
 \subsubsection{Accessibility Requirements}
 \label{ssub:accessibility_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item The application shall be useable by users with any ability.
+	\item \textcolor{red}{\emph{N/A}}
 \end{enumerate}
 % End SubSubSection
 
@@ -344,7 +359,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:reliability_and_availability_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item The application will be usable for 24 hours per day, 365 days per year (Beer Store/LCBO availability may vary by user).
+	\item \textcolor{red}{The application to be unavaiable for use for no more than 2 days per year} (Beer Store/LCBO availability may vary by user).
 \end{enumerate}
 % End SubSubSection
 
@@ -360,7 +375,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:capacity_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item "What is this Beer" shall accomodate its users data needs.
+	\item \textcolor{red}{The application shall accomodate up to 1000 simultaneous users at a time.}
 \end{enumerate}
 % End SubSubSection
 
@@ -368,7 +383,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:scalability_or_extensibility_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item The application shall be able to process no less than 100 user interactions per minute.
+	\item The application shall be able to process no less than \textcolor{red}{50 controller changes, or identification requests per minute.}
 \end{enumerate}
 % End SubSubSection
 
@@ -377,6 +392,46 @@ The following section contains the details about all of the functional requireme
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
 	\item The application should operate as long as it is installed on a users device.
+\end{enumerate}
+% End SubSubSection
+
+% End SubSection
+
+\subsection{Operational and Environmental Requirements}
+\label{sub:operational_and_environmental_requirements}
+% Begin SubSection
+
+\subsubsection{Expected Physical Environment}
+\label{ssub:expected_physical_environment}
+% Begin SubSubSection
+\begin{enumerate}[{OE}1. ]
+	\item The product shall be used in an environment with access to the internet
+	\item The product shall function in any environment that the device hardware can function.
+\end{enumerate}
+% End SubSubSection
+
+\subsubsection{Requirements for Interfacing with Adjacent Systems}
+\label{ssub:requirements_for_interfacing_with_adjacent_systems}
+% Begin SubSubSection
+\begin{enumerate}[{SR}1. ]
+	\item The product shall be connected to the internet and have access to Google Maps API.
+\end{enumerate}
+% End SubSubSection
+
+\subsubsection{Productization Requirements}
+\label{ssub:productization_requirements}
+% Begin SubSubSection
+\begin{enumerate}[{OE}1. ]
+	\item The product will be released on the Google Play Store for all Android devices.
+	\item The product shall be distributed as an Android Application Package(.apk) file.
+\end{enumerate}
+% End SubSubSection
+
+\subsubsection{Release Requirements}
+\label{ssub:release_requirements}
+% Begin SubSubSection
+\begin{enumerate}[{OE}1. ]
+	\item The product will have one single release date on April 3, 2016.
 \end{enumerate}
 % End SubSubSection
 
