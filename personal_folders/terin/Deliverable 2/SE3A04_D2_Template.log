@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.28)  4 MAR 2016 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.28)  5 MAR 2016 13:55
 entering extended mode
 **SE3A04_D2_Template.tex
 (SE3A04_D2_Template.tex
@@ -183,19 +183,64 @@ Package: extarrows 2008/05/15 v1.0b Some extensible arrows
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(SE3A04_D2_Template.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+("C:\Program Files (x86)\Miktex\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count103
+\c@Blindtext=\count104
+\c@blind@countparstart=\count105
+\blind@countxx=\count106
+\blindtext@numBlindtext=\count107
+\blind@countyy=\count108
+\c@blindlist=\count109
+\c@blindlistlevel=\count110
+\c@blindlist@level=\count111
+\blind@listitem=\count112
+\c@blind@listcount=\count113
+\c@blind@levelcount=\count114
+\blind@mathformula=\count115
+\blind@Mathformula=\count116
+\c@blind@randomcount=\count117
+\c@blind@randommax=\count118
+\c@blind@pangramcount=\count119
+\c@blind@pangrammax=\count120
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrextend.sty"
+Package: scrextend 2015/10/03 v3.19a KOMA-Script package (extend other classes 
+with features of KOMA-Script classes)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
+Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
+basics and keyval usage)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty"
+Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
+Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
+
+Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+)))
+LaTeX Info: Redefining \textsubscript on input line 1277.
+) (SE3A04_D2_Template.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -233,23 +278,23 @@ LaTeX Font Info:    ... okay on input line 35.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
+\scratchcounter=\count121
 \scratchdimen=\dimen122
 \scratchbox=\box28
-\nofMPsegments=\count104
-\nofMParguments=\count105
+\nofMPsegments=\count122
+\nofMParguments=\count123
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count106
+\MPscratchCnt=\count124
 \MPscratchDim=\dimen123
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks30
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+LaTeX Font Info:    Try loading font information for U+msa on input line 45.
  ("C:\Program Files (x86)\Miktex\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 45.
 
 ("C:\Program Files (x86)\Miktex\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -259,45 +304,54 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Template.toc)
 \tf@toc=\write3
 
-(SE3A04_D2_Template.lot)
-\tf@lot=\write4
+(SE3A04_D2_Template.lof)
+\tf@lof=\write4
+ (SE3A04_D2_Template.lot)
+\tf@lot=\write5
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 55--58
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
 
 LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 62.
+             The label is: - on input line 72.
 
-[3] [4] [5]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 162.
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
- ("C:\Program Files (x86)\Miktex\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 162.
- [6]
-(SE3A04_D2_Template.aux) ) 
+ []
+
+<images/use_case_diagram.png, id=16, 1111.15125pt x 641.39626pt>
+File: images/use_case_diagram.png Graphic file (type png)
+
+<use images/use_case_diagram.png>
+Package pdftex.def Info: images/use_case_diagram.png used on input line 88.
+(pdftex.def)             Requested size: 500.01344pt x 288.62564pt.
+
+Overfull \hbox (30.25842pt too wide) in paragraph at lines 88--89
+[][] 
+ []
+
+[4 <./images/use_case_diagram.png>] [5] [6] [7] (SE3A04_D2_Template.aux) ) 
 Here is how much of TeX's memory you used:
- 2832 strings out of 493673
- 36545 string characters out of 3143150
- 101538 words of memory out of 3000000
- 6141 multiletter control sequences out of 15000+200000
- 11849 words of font info for 46 fonts, out of 3000000 for 9000
+ 3561 strings out of 493673
+ 49030 string characters out of 3143150
+ 132850 words of memory out of 3000000
+ 6847 multiletter control sequences out of 15000+200000
+ 11808 words of font info for 46 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,13n,43p,620b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/Miktex/fonts/type1/public/ams
-fonts/cm/cmbx10.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr
-10.pfb><C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<C:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Pro
-gram Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
-iles (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SE3A04_D2_Template.pdf (6 pages, 108256 bytes).
+ 33i,13n,43p,620b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/P
+rogram Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
+ Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
+ (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/
+Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/Miktex/
+fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/Miktex/fonts/t
+ype1/public/amsfonts/cm/cmss10.pfb>
+Output written on SE3A04_D2_Template.pdf (7 pages, 165978 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
