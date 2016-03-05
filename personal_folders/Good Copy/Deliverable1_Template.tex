@@ -13,6 +13,10 @@
 \usepackage{extarrows}
 \usepackage{setspace}
 \usepackage{xcolor}
+\usepackage{grffile}
+\usepackage[normalem]{ulem}
+\usepackage{textcomp}
+
 %------------------------------------------------------------------------------
 
 % Header and Footer
@@ -24,9 +28,11 @@
 
 % Title Details
 %------------------------------------------------------------------------------
-\title{Deliverable \#1 Template}
-\author{SE 3A04: Software Design II -- Large System Design}
-\date{}                               
+\title{Deliverable \#1 - Software Requirements Specification \\
+	SE 3A04: Software Design II -- Large System Design}
+\author{Chen, Arthur \and Campbell, Christopher \and Endrizzi, Johnny \\ 
+\and Coovert, Mitchell \and Gill, Surinder \and Dhadda, Terin}
+\date{February 8, 2016}                               
 %------------------------------------------------------------------------------
 
 % Document
@@ -43,55 +49,47 @@
 \section{Introduction}
 \label{sec:introduction}
 
-The following section provide an overview of the entire software requirements specifications document.
+The following section provides an overview of the entire software requirements specifications document.
 
 \subsection{Purpose}
 \label{sub:purpose}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item The purpose this document is to outline the requirements for the \textcolor{blue}{"What is this Beer?"} application. This program willbve developed as a mobile android application and will be available on the \underline{Play Store}.
-	\item This document is intended for the developers of the application, Professor Ridha Khedri, teaching assistants for SE 3A04, and any other software engineers or students interested in this project.
-\end{enumerate}
+The purpose this document is to outline the requirements for the \textcolor{red}{"BEER'D"} application. This program will be developed as a mobile android application and will be available on the Google Play Store. This document is intended for the developers of the application, Professor Ridha Khedri, teaching assistants for SE 3A04, and any other software engineers or students interested in this project.
 % End SubSection
 
 \subsection{Scope}
 \label{sub:scope}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item The software product to be produced is known as the \textcolor{blue}{"What is this Beer?"} mobile application.
-	\item This application will allow a user to identify a certain type of beer. This will be accomplished by three experts on the colour of beer, taste of beer, and type of beer, who will form their best choice as to what kind of beer the user describes when selecting some predefined inputs. The application will display these results, display a map of nearby \underline{LCBO's} and \underline{Beer Store's} according to the user's current location, \textcolor{red}{as well as some social media sharing features.}
-	\item \textcolor{blue}{Describe the application of the software being specified, including relevant benefits, objectives, and goals}
-	\item \textcolor{blue}{Be consistent with similar statements in higher-level specifications (e.g., the system requirements specification), if they exist}
-\end{enumerate}
+The software product to be produced is known as the \textcolor{red}{"BEER'D"} mobile application. This application will allow a user to identify a certain type of beer. This will be accomplished by three experts on the colour of beer, taste of beer, and type of beer, who will form their best choice as to what kind of beer the user describes when selecting some predefined inputs. The application will display these results, display a map of nearby LCBO's and Beer Store's according to the user's current location, as well as some social media sharing features.
 % End SubSection
 
 \subsection{Definitions, Acronyms, and Abbreviations}
 \label{sub:definitions_acronyms_and_abbreviations}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item \textbf{LCBO: } The Liquor Control Board of Ontario is a non-share capital provincial Crown corporation in Ontario, Canada.
-	\item \textbf{Beer Store: } The Beer Store is the trading name for Brewers Retail, a privately owned chain of retail outlets selling beer and other malt beverages in the province of Ontario, Canada, founded in 1927.
-	\item \textbf{Play Store: } Google Play Store or Google Play, and originally the Android Market, is a digital distribution platform operated by Google.
-\end{enumerate}
+	\textcolor{red}{N/A}
 % End SubSection
 
-\subsection{\textcolor{blue}{References}}
+\subsection{{References}}
 \label{sub:references}
 % Begin SubSection
 \begin{enumerate}[a)]
-	\item Provide a complete list of all documents referenced elsewhere in the SRS
-	\item Identify each document by title, report number (if applicable), date, and publishing organization
-	\item Specify the sources from which the references can be obtained
+	\item \underline{Beer Buddy} app description on \underline{Google Play}  \\
+https://play.google.com/store/apps/details?id=com.s2it.beerbuddy\&hl=en
+	\item \underline{Untappd} app description on \underline{Google Play} \\
+https://play.google.com/store/apps/details?id=com.untappdllc.app\&hl=en
+	\\
+	
 \end{enumerate}
 % End SubSection
 
-\subsection{\textcolor{blue}{Overview}}
+\subsection{{Overview}}
 \label{sub:overview}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item Describe what the rest of the SRS contains
-	\item Explain how the SRS is organized
-\end{enumerate}
+
+	The rest of the document will outline general characteristics of the product, and the kind of environment it will be released it. What the product can do and is limited to will be explained more thoroughly as well as a complete description of its functional and non-functional requirements.
+	\\
+	Section 2 will describe the more general aspects of the product such as its relation with related products, as well as other systems. It will describe a summary of its functions and its interaction with the user as well constraints, assumptions, and potential requirements for future versions of the product. Section 3 and 4 will have a more extensive statement about the product's functional and non-functional requirements.
+
 % End SubSection
 
 % End Section
@@ -100,69 +98,79 @@ The following section provide an overview of the entire software requirements sp
 \label{sec:overall_description}
 % Begin Section
 
-This section of the SRS should describe the general factors that affect the product and its requirements. It does not state specific requirements; it provides a background for those requirements and makes them easier to understand.
+"What is this Beer?" provides users who are of legal age to purchase alcohol to identify a beer reflective of their preferences and provide them with a method of locating a place that supplies such beer. Locations are specific to \underline{LCBO} and \underline{Beer Store} and are powered by Google Maps API. The application should be usable by anybody with general knowledge of mobile technology. \\
+
 
 \subsection{Product Perspective}
 \label{sub:product_perspective}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item Put the product into perspective with other related products, i.e., context
-	\item If the product is independent and totally self-contained, it should be stated here
-	\item If the SRS defines a product that is a component of a larger system, as frequently occurs, then this subsection should relate the requirements of that larger system to functionality of the software and should identify interfaces between that system and the software
-	\item A block diagram showing the major components of the larger system, interconnections, and external interfaces can be helpful
-\end{enumerate}
+
+	There are other applications similar to "What is this Beer?" called "Untappd" and "Beer Buddy." Untappd allows the user to find nearby beers and bars and features based around that idea while Beer Buddy allows the user to find out more about a certain beer by UPC code. This application combines the most practical aspects of these applications such as outputting beer stores and beer information via search bar. 
+	\\ This product is completely separate from the applications mentioned above and is a standalone product.
+	\\ The product uses interfaces from systems such as Google Maps and LCBO in order to enable the functionality of the location feature and output beer information respectively. It also connects to social media networks such as Facebook, Twitter, and Instagram in order to share a message about the beer picked.
+    \\
+		\includegraphics[scale=0.1]{Block Diagram/Block Diagram.jpg}
+
+	
+
 % End SubSection
 
 \subsection{Product Functions}
 \label{sub:product_functions}
 % Begin SubSection
+
+The software should be able to:
 \begin{enumerate}[a)]
-	\item Provide a summary of the major functions that the software will perform.
-	\begin{itemize}
-		\item \textbf{Example}: An SRS for an accounting program may use this part to address customer account maintenance, customer statement, and invoice preparation without mentioning the vast amount of detail that each of those functions requires.
-	\end{itemize}
-	\item Functions should be organized in a way that makes the list of functions understandable to the customer or to anyone else reading the document for the first time
-	\item Textual or graphical methods can be used to show the different functions and their relationships
-	\begin{itemize}
-		\item Such a diagram is not intended to show a design of a product, but simply shows the logical relationships among variables
-	\end{itemize} 
+
+\item Search for beers with particular attributes
+\item Output beer information of selected beer
+\item Locate closest locations to obtain selected beer
+\item Share the beer information on social media 
+
+	
 \end{enumerate}
 % End SubSection
 
 \subsection{User Characteristics}
 \label{sub:user_characteristics}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item Describe those general characteristics of the intended users of the product including educational level, experience, and technical expertise
-	\item Do not state specific requirements, but rather provide the reasons why certain specific requirements are later specified
+\begin{enumerate}
+
+	\item \textcolor{red}{The User will need a basic knowledge of smartphone use: know where the Playstore is, know how to download applications off of the playstore and follow instructions in the application.}
+	\item The User also needs to have enough knowledge of beer to identify the taste and type desired.
+
 \end{enumerate}
 % End SubSection
 
 \subsection{Constraints}
 \label{sub:constraints}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item Provide a general description of any other items that will limit the developer's options
+\begin{enumerate}
+
+	\item \textcolor{red}{The application can only search based on specific categories of keywords.}
+	\item Location functionality only works if location is enabled by the client.
+	\item The types of beer offered at local store locations will vary and will limit the amount of information the application is able to output.
+	
 \end{enumerate}
 % End SubSection
 
 \subsection{Assumptions and Dependencies}
 \label{sub:assumptions_and_dependencies}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item List each of the factors that affect the requirements stated in the SRS
-	\item These factors are not design constraints on the software but are, rather, any changes to them that can affect the requirements in the SRS
-	\begin{itemize}
-		\item \textbf{Example}: An assumption may be that a specific operating system will be available on the hardware designated for the software product. If, in fact, the operating system is not available, the SRS would then have to change accordingly.
-	\end{itemize}
+\begin{enumerate}
+
+\item \textcolor{red}{The application depends on information provided by the beer API used such as beer brand, beer taste, cost, etc.}
+\item The application requires a desired input to be predicted by the application.
+
 \end{enumerate}
 % End SubSection
 
 \subsection{Apportioning of Requirements}
 \label{sub:apportioning_of_requirements}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item Identify requirements that may be delayed until future versions of the system
+\begin{enumerate}
+	\item The addition of wines, sprites and other beverages can be added in future version.
+	\item Other experts to assist the user in finding the desired beer may also be added.
 \end{enumerate}
 % End SubSection
 
@@ -173,94 +181,77 @@ This section of the SRS should describe the general factors that affect the prod
 \label{sec:functional_requirements}
 The following section contains the details about all of the functional requirements about the system. The requirements are split up by viewpoints, and then again by business events, before they go into detail about the functions of the system.\\ 
 
-\textcolor{blue}{DON'T FORGET TO DELETE THIS USELESS AF PARAGRAPH BELOW}\\
-
-This section of the SRS should contain all of the software requirements to a level of detail sufficient to enable designers to design a system to satisfy those requirements, and testers to test that the system satisfies those requirements. Throughout this section, every stated requirement should be externally perceivable by users, operators, or other external systems. These requirements should include at a minimum a description of every input (stimulus) into the system, every output (response) from the system, and all functions performed by the system in response to an input or in support of an output.
-
-
-
-
 
 \begin{enumerate}[{VP}1.]
 	\item User
 	
 	\begin{enumerate}[{BE1}.1]
-		\item Information About a Beer is Requested
+		
+		\item User wants to request information about a beer
 		\begin{enumerate}
-			\item The system shall display an input screen for the user, where the user will select from a list of predefined words for three separate categories: Colour of Beer, Taste of Beer, and Type of Beer.
-			\item The experts (each corresponding to one category) will use the input provided by the user to choose what kind of beer the user may be describing. These results will be displayed on a forum screen, split up by category.
-			\item Below the results chosen by the experts, the forum screen will contain a map of \underline{LCBO's} and \underline{Beer Store's} that are located within a 50km radius to the user's current location that offer each type of chosen beer by the experts.
-			\item \textcolor{red}{Below the map, there will be three buttons. A button for Facebook, a button for Twitter, and a button for Instagram. If the user has their accounts synced to the system and they click one of the buttons, the system shall create a message (less than 140 characters) and a picture (of one of the beers chosen by the experts) to share to the corresponding social media account.}
+			\item The system shall display an input screen for the user, where the user will select from a list of predefined words for three separate categories.
+			\item The system will have the experts (each corresponding to one category) use the input provided by the user to predict what kind of beer the user may be describing.
+			\item The system will create a forum screen which will contain a map of LCBO\textquotesingle s and Beer Store\textquotesingle s that are located within a 50km radius to the user\textquotesingle s current location that offer each type of chosen beer by the experts.
+			\item \textcolor{red}{Below the map, there will be three forms of selection: a selection for Facebook, Twitter, and Instagram. If the user has their accounts synced to the system and they chooses one of these selections, the system shall create a message (less than 140 characters) and a picture (of one of the beers chosen by the experts) to share to the corresponding social media account.}
+			
 		\end{enumerate}
 		
-		\item Application Downloaded from the \underline{Play Store}
+		\item User wants to review search history
 		\begin{enumerate}
-			\item The system shall tell the user that it requires location information. It will ask the user if they accept this condition. The application will only be downloaded if they select "Yes".
-			\item The system shall ask the user if they wish to sync their social media accounts (Facebook, Twitter, Instagram) to the application. If they select "Yes", then clicking the social media buttons on the forum screen will always open the respective social media website already logged in with the user's credentials. If they select "No", then selecting the social media buttons of the forum screen will ask the user to log on to the respective social media account every time.
-			\item The system shall encrypt any social media account credentials and information given to the application. 
+			\item The user must be able to review previous inputs for their searches.
+			\item The system must hold data on previous searched entries in memory.
 		\end{enumerate}
+		
+		\item User wants to share beer results
+		\begin{enumerate}
+			\item The system must display an error if unable to connect to a social media outlet.
+			\item The system if successful, must post the results of the user search on user controlled social media outlet(s).
+		\end{enumerate}
+		
+		\item User wants to access general information 
+		\begin{enumerate}
+			\item The system must display an about screen containing information about beers.
+		\end{enumerate}
+		
+		\item User wants to sync social media accounts 
+		\begin{enumerate}
+			\item The system must be allow to login to a social media account.
+			\item The system must display an error if unable to to connect to a social media connect.
+			\item The system must allow a success message once connected to a social media account.
+			\item The system must encrypt login credentials when connecting to a social media account.
+		\end{enumerate}
+		
+		
 		
 	\end{enumerate}
 	
 	\item Developer
 	
 	\begin{enumerate}[{BE2}.1]
-		\item \textcolor{blue}{\underline{LCBO} or \underline{Beer Store} Starts Offering a New Beer (??? I think the API will update automatically but whatever)}
+		\item Developer updates the API(s).
 		\begin{enumerate}
-			\item 
-			\item 
-			\item 
+			\item The system must be able to request and send information to the desired API(s).
+			\item The system shall update it's beer selection based on the data provided in the API(s).
 		\end{enumerate}
 		
-		\item \textcolor{blue}{Ratings and Feedback are given to the Application (from \underline{Play Store}) (??? - again, not sure if this is the best)}
+		\item Developer wants to add/remove or change an expert.
 		\begin{enumerate}
-			\item 
-			\item 
-			\item
+			\item The system must be able to support addition or removal of an expert as requested.
+			\item The system must be able to support a swap or change of an expert.
+		\end{enumerate}
+		
+		\item {Ratings and Feedback are given to the Application }
+		\begin{enumerate}
+			\item The system shall prompt user to enter for a rating out of 5 after the service is used. 
+			\item The system shall send these results to the \underline{Play Store} when there is a valid internet connection.
 		\end{enumerate}
 		
 	\end{enumerate}
 	
-		\item \textcolor{blue}{Apparently "Application" can also be a viewpoints??? I don't think we need it.}
-	
-	\begin{enumerate}[{BE3}.1]
-		\item
-		\begin{enumerate}
-			\item 
-			\item 
-			\item 
-		\end{enumerate}
-		
-	\end{enumerate}
 	
 \end{enumerate}
 
 % End Section
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 \section{Non-Functional Requirements}
 \label{sec:non-functional_requirements}
@@ -273,7 +264,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:appearance_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{LF}1. ]
-	\item Each menu shall be clearly labeled and each page shall be accessible.
+	\item \textcolor{red}{Each menu shall be clearly labeled.}
 \end{enumerate}
 % End SubSubSection
 
@@ -281,7 +272,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:style_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{LF}1. ]
-	\item "What is this Beer" shall operate with a simple GUI, and easy to understand layout.
+	\item \textcolor{red}{\emph{N/A}}
 \end{enumerate}
 % End SubSubSection
 
@@ -295,7 +286,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:ease_of_use_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item The application shall be eary for a person aged 19+ in able condition to understand and use all of its features.
+	\item The application shall \textcolor{red}{be available} for a person aged 19+ in able condition to understand and use all of its features.
 \end{enumerate}
 % End SubSubSection
 
@@ -303,7 +294,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:personalization_and_internationalization_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item The application shall retain the users preferences.
+	\item The application shall \textcolor{red}{retain the users previous location, and search settings.}
 \end{enumerate}
 % End SubSubSection
 
@@ -321,16 +312,13 @@ This section of the SRS should contain all of the software requirements to a lev
 \begin{enumerate}[{UH}1. ]
 	\item "What is this Beer" shall use words and symbols understandable by its user community.
 \end{enumerate}
-\begin{enumerate}[{UH}2. ]
-	\item "What is this Beer" shall hide details of its constructions from the user.
-\end{enumerate}
 % End SubSubSection
 
 \subsubsection{Accessibility Requirements}
 \label{ssub:accessibility_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item The application shall be useable by users with any ability.
+	\item \textcolor{red}{\emph{N/A}}
 \end{enumerate}
 % End SubSubSection
 
@@ -355,7 +343,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:safety_critical_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item 
+	\item \emph{N/A}
 \end{enumerate}
 % End SubSubSection
 
@@ -371,7 +359,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:reliability_and_availability_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item The application will be usable for 24 hours per day, 365 days per year (Beer Store/LCBO availability may vary by user).
+	\item \textcolor{red}{The application to be unavaiable for use for no more than 2 days per year} (Beer Store/LCBO availability may vary by user).
 \end{enumerate}
 % End SubSubSection
 
@@ -379,7 +367,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:robustness_or_fault_tolerance_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item 
+	\item \emph{N/A}
 \end{enumerate}
 % End SubSubSection
 
@@ -387,7 +375,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:capacity_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item "What is this Beer" shall accomodate its users data needs.
+	\item \textcolor{red}{The application shall accomodate up to 1000 simultaneous users at a time.}
 \end{enumerate}
 % End SubSubSection
 
@@ -395,7 +383,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:scalability_or_extensibility_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item The application shall be able to process no less than 100 user interactions per minute.
+	\item The application shall be able to process no less than \textcolor{red}{50 controller changes, or identification requests per minute.}
 \end{enumerate}
 % End SubSubSection
 
@@ -582,28 +570,17 @@ This section of the SRS should contain all of the software requirements to a lev
 \begin{tabular}{|l|l|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Team Member}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Student \\ Number\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Contribution}} & \multicolumn{1}{c|}{\textbf{Signature}} \\ \hline
-Arthur Chen &  &  &  \\ \hline
+Arthur Chen & 1306616 & Section 1-2 &  \\ \hline
 Christopher Campbell & 1143732 & Section 4, 1-3 &  \\ \hline
-Johnny Endrizzi &  &  &  \\ \hline
+Johnny Endrizzi & 1310603 & Section 1-2 &  \\ \hline
 Mitchell Coovert & 1306701 & Section 4, 4-7 &  \\ \hline
-Surinder Gill &  &  &  \\ \hline
+Surinder Gill & 1308896 & Section 1-3 &  \\ \hline
 Terin Dhadda & 1312555 & Table of Contents and Sections 1, 3, A &  \\ \hline
 \end{tabular}
 \caption{Contributions and Signatures of Team Members}
 \end{table}
 % End Section
 
-\newpage
-\section*{IMPORTANT NOTES}
-\begin{itemize}
-	\item Be sure to include all sections of the template in your document regardless whether you have something to write for each or not
-	\begin{itemize}
-		\item If you do not have anything to write in a section, indicate this by the \emph{N/A}, \emph{void}, \emph{none}, etc.
-	\end{itemize}
-	\item Uniquely number each of your requirements for easy identification and cross-referencing
-	\item Highlight terms that are defined in Section~1.3 (\textbf{Definitions, Acronyms, and Abbreviations}) with \textbf{bold}, \emph{italic} or \underline{underline}
-	\item For Deliverable 1, please highlight, in some fashion, all (you may have more than one) creative and innovative features. Your creative and innovative features will generally be described in Section~2.2 (\textbf{Product Functions}), but it will depend on the type of creative or innovative features you are including.
-\end{itemize}
 
 
 \end{document}

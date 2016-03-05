@@ -273,7 +273,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:appearance_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{LF}1. ]
-	\item 
+	\item Each menu shall be clearly labeled and each page shall be accessible.
 \end{enumerate}
 % End SubSubSection
 
@@ -281,7 +281,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:style_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{LF}1. ]
-	\item 
+	\item "What is this Beer" shall operate with a simple GUI, and easy to understand layout.
 \end{enumerate}
 % End SubSubSection
 
@@ -295,7 +295,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:ease_of_use_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item 
+	\item The application shall be eary for a person aged 19+ in able condition to understand and use all of its features.
 \end{enumerate}
 % End SubSubSection
 
@@ -303,7 +303,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:personalization_and_internationalization_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item 
+	\item The application shall retain the users preferences.
 \end{enumerate}
 % End SubSubSection
 
@@ -311,7 +311,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:learning_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item 
+	\item The application shall be able to be used by members of the public with no previous training.
 \end{enumerate}
 % End SubSubSection
 
@@ -319,7 +319,10 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:understandability_and_politeness_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item 
+	\item "What is this Beer" shall use words and symbols understandable by its user community.
+\end{enumerate}
+\begin{enumerate}[{UH}2. ]
+	\item "What is this Beer" shall hide details of its constructions from the user.
 \end{enumerate}
 % End SubSubSection
 
@@ -327,7 +330,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:accessibility_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{UH}1. ]
-	\item 
+	\item The application shall be useable by users with any ability.
 \end{enumerate}
 % End SubSubSection
 
@@ -341,7 +344,10 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:speed_and_latency_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item 
+	\item All valid interactions between the user and "What is this Beer" should have maximum response time of 0.5 seconds before showing a sign to the user that the request was received.
+\end{enumerate}
+\begin{enumerate}[{PR}2. ]
+	\item The application shall load in under 10 seconds on a Bell Sympatico or equivalent connection.
 \end{enumerate}
 % End SubSubSection
 
@@ -357,7 +363,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:precision_or_accuracy_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item 
+	\item Any distance calculations shall be accurate to within two decimal places.
 \end{enumerate}
 % End SubSubSection
 
@@ -365,7 +371,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:reliability_and_availability_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item 
+	\item The application will be usable for 24 hours per day, 365 days per year (Beer Store/LCBO availability may vary by user).
 \end{enumerate}
 % End SubSubSection
 
@@ -381,7 +387,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:capacity_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item 
+	\item "What is this Beer" shall accomodate its users data needs.
 \end{enumerate}
 % End SubSubSection
 
@@ -389,7 +395,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:scalability_or_extensibility_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item 
+	\item The application shall be able to process no less than 100 user interactions per minute.
 \end{enumerate}
 % End SubSubSection
 
@@ -397,7 +403,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:longevity_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{PR}1. ]
-	\item 
+	\item The application should operate as long as it is installed on a users device.
 \end{enumerate}
 % End SubSubSection
 
@@ -411,17 +417,16 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:expected_physical_environment}
 % Begin SubSubSection
 \begin{enumerate}[{OE}1. ]
-	\item The product shall be used in an environment with access to the internet
-	\item The product shall be used in an environment with the ability to connect to satellites 
-	for the use of the Google Maps API.
+	\item \textcolor{}The product requires an enbe used in an environment with access to the internet}
+	\item The product shall function in any environment that the device hardware can function.
 \end{enumerate}
 % End SubSubSection
 
 \subsubsection{Requirements for Interfacing with Adjacent Systems}
 \label{ssub:requirements_for_interfacing_with_adjacent_systems}
 % Begin SubSubSection
-\begin{enumerate}[{OE}1. ]
-	\item 
+\begin{enumerate}[{SR}1. ]
+	\item The product shall be connected to the internet and have access to Google Maps API.
 \end{enumerate}
 % End SubSubSection
 
@@ -452,7 +457,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:maintenance_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{MS}1. ]
-	\item 
+	\item \emph{N/A}
 \end{enumerate}
 % End SubSubSection
 
@@ -484,7 +489,8 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:access_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{SR}1. ]
-	\item 
+	\item All users will have access to the functionality of the product.
+	\item No user shall have access to another users social media information.
 \end{enumerate}
 % End SubSubSection
 
@@ -492,7 +498,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:integrity_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{SR}1. ]
-	\item 
+	\item The product shall be protected from intentional abuse.
 \end{enumerate}
 % End SubSubSection
 
@@ -500,7 +506,9 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:privacy_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{SR}1. ]
-	\item 
+	\item The product will not store users personal information.
+	\item The product shall protect the transfer of the users information if they choose to sign into a social media 
+	application.
 \end{enumerate}
 % End SubSubSection
 
@@ -508,7 +516,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:audit_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{SR}1. ]
-	\item 
+	\item \emph{N/A}
 \end{enumerate}
 % End SubSubSection
 
@@ -516,7 +524,7 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:immunity_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{SR}1. ]
-	\item 
+	\item \emph{N/A}
 \end{enumerate}
 % End SubSubSection
 
@@ -530,15 +538,15 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:cultural_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{CP}1. ]
-	\item 
+	\item The product shall not be offensive to religious or ethnic groups.
 \end{enumerate}
 % End SubSubSection
 
 \subsubsection{Political Requirements}
 \label{ssub:political_requirements}
 % Begin SubSubSection
-\begin{enumerate}[{CP}1. ]
-	\item 
+\begin{enumerate}[{SR}1. ]
+	\item \emph{N/A}
 \end{enumerate}
 % End SubSubSection
 
@@ -552,15 +560,15 @@ This section of the SRS should contain all of the software requirements to a lev
 \label{ssub:compliance_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{LR}1. ]
-	\item 
+	\item The product shall abide by all licenses used.
 \end{enumerate}
 % End SubSubSection
 
 \subsubsection{Standards Requirements}
 \label{ssub:standards_requirements}
 % Begin SubSubSection
-\begin{enumerate}[{LR}1. ]
-	\item 
+\begin{enumerate}[{SR}1. ]
+	\item \emph{N/A}
 \end{enumerate}
 % End SubSubSection
 
@@ -579,9 +587,9 @@ This section of the SRS should contain all of the software requirements to a lev
 \hline
 \multicolumn{1}{|c|}{\textbf{Team Member}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Student \\ Number\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Contribution}} & \multicolumn{1}{c|}{\textbf{Signature}} \\ \hline
 Arthur Chen &  &  &  \\ \hline
-Chris Campbell &  &  &  \\ \hline
+Christopher Campbell & 1143732 & Section 4, 1-3 &  \\ \hline
 Johnny Endrizzi &  &  &  \\ \hline
-Mitchell Coovert & 1306701 & Sections 4.4 to 4.7 &  \\ \hline
+Mitchell Coovert & 1306701 & Section 4, 4-7 &  \\ \hline
 Surinder Gill &  &  &  \\ \hline
 Terin Dhadda & 1312555 & Table of Contents and Sections 1, 3, A &  \\ \hline
 \end{tabular}
