@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.28)  5 MAR 2016 13:55
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.7)  4 MAR 2016 15:23
->>>>>>> 2cf85978315d60d7ba633855fa630763b5813f41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.7)  6 MAR 2016 21:26
 entering extended mode
 **SE3A04_D2_Template.tex
 (SE3A04_D2_Template.tex
@@ -187,10 +183,10 @@ Package: extarrows 2008/05/15 v1.0b Some extensible arrows
 ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
-("C:\Program Files (x86)\Miktex\tex\latex\tools\xspace.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 \c@blindtext=\count103
@@ -212,27 +208,25 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count119
 \c@blind@pangrammax=\count120
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrextend.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrextend.sty"
 Package: scrextend 2015/10/03 v3.19a KOMA-Script package (extend other classes 
 with features of KOMA-Script classes)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
 Package: scrkbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty"
 Package: scrbase 2015/10/03 v3.19a KOMA-Script package (KOMA-Script-independent
  basics and keyval usage)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
 Package: scrlfile 2015/10/03 v3.19a KOMA-Script package (loading files)
 
 Package scrlfile, 2015/10/03 v3.19a KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-)))
-LaTeX Info: Redefining \textsubscript on input line 1277.
-) (SE3A04_D2_Template.aux)
+)))) (SE3A04_D2_Template.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
@@ -294,13 +288,8 @@ LaTeX Font Info:    ... okay on input line 39.
 \makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks30
 )
-<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for U+msa on input line 45.
- ("C:\Program Files (x86)\Miktex\tex\latex\amsfonts\umsa.fd"
-=======
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
->>>>>>> 2cf85978315d60d7ba633855fa630763b5813f41
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 45.
@@ -328,64 +317,38 @@ LaTeX Warning: The counter will not be printed.
 [3]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
-<<<<<<< HEAD
  []
 
-<images/use_case_diagram.png, id=16, 1111.15125pt x 641.39626pt>
-File: images/use_case_diagram.png Graphic file (type png)
-
-<use images/use_case_diagram.png>
-Package pdftex.def Info: images/use_case_diagram.png used on input line 88.
-(pdftex.def)             Requested size: 500.01344pt x 288.62564pt.
-
-Overfull \hbox (30.25842pt too wide) in paragraph at lines 88--89
-[][] 
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 283--283
+[]\OT1/cmr/m/n/10 Reference ex-pert in-for-ma-tion
  []
 
-[4 <./images/use_case_diagram.png>] [5] [6] [7] (SE3A04_D2_Template.aux) ) 
+[6] [7]
+Overfull \hbox (46.4883pt too wide) in paragraph at lines 339--349
+ [][] 
+ []
+
+[8
+
+] (SE3A04_D2_Template.aux) ) 
 Here is how much of TeX's memory you used:
- 3561 strings out of 493673
- 49030 string characters out of 3143150
- 132850 words of memory out of 3000000
- 6847 multiletter control sequences out of 15000+200000
+ 3559 strings out of 493698
+ 48647 string characters out of 3144409
+ 147604 words of memory out of 3000000
+ 6826 multiletter control sequences out of 15000+200000
  11808 words of font info for 46 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 33i,13n,43p,620b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/P
-rogram Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program
- Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
- (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/
-Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/Miktex/
-fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/Miktex/fonts/t
-ype1/public/amsfonts/cm/cmss10.pfb>
-Output written on SE3A04_D2_Template.pdf (7 pages, 165978 bytes).
-=======
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 162.
- [6]
-(SE3A04_D2_Template.aux) ) 
-Here is how much of TeX's memory you used:
- 2834 strings out of 493698
- 36351 string characters out of 3144409
- 101261 words of memory out of 3000000
- 6121 multiletter control sequences out of 15000+200000
- 11849 words of font info for 46 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
- 27i,13n,43p,620b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SE3A04_D2_Template.pdf (6 pages, 108256 bytes).
->>>>>>> 2cf85978315d60d7ba633855fa630763b5813f41
+ 33i,13n,43p,620b,307s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb>
+Output written on SE3A04_D2_Template.pdf (8 pages, 111862 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -85,10 +85,11 @@ https://play.google.com/store/apps/details?id=com.untappdllc.app\&hl=en
 \subsection{{Overview}}
 \label{sub:overview}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item  The rest of the document will outline general characteristics of the product, and the kind of environment it will be released it. What the product can do and is limited to will be explained more thoroughly as well as a complete description of its functional and non-functional requirements.
-	\item Section 2 will describe the more general aspects of the product such as its relation with related products, as well as other systems. It will describe a summary of its functions and its interaction with the user as well constraints, assumptions, and potential requirements for future versions of the product. Section 3 and 4 will have a more extensive statement about the product's functional and non-functional requirements.
-\end{enumerate}
+
+	The rest of the document will outline general characteristics of the product, and the kind of environment it will be released it. What the product can do and is limited to will be explained more thoroughly as well as a complete description of its functional and non-functional requirements.
+	\\
+	Section 2 will describe the more general aspects of the product such as its relation with related products, as well as other systems. It will describe a summary of its functions and its interaction with the user as well constraints, assumptions, and potential requirements for future versions of the product. Section 3 and 4 will have a more extensive statement about the product's functional and non-functional requirements.
+
 % End SubSection
 
 % End Section
@@ -103,16 +104,15 @@ https://play.google.com/store/apps/details?id=com.untappdllc.app\&hl=en
 \subsection{Product Perspective}
 \label{sub:product_perspective}
 % Begin SubSection
-\begin{enumerate}[a)]
-	\item There are other applications similar to "What is this Beer?" called "Untappd" and "Beer Buddy." Untappd allows the user to find nearby beers and bars and features based around that idea while Beer Buddy allows the user to find out more about a certain beer by UPC code. This application combines the most practical aspects of these applications such as outputting beer stores and beer information via search bar. 
-	\item This product is completely separate from the applications mentioned above and is a standalone product.
-	\item The product uses interfaces from systems such as Google Maps and LCBO in order to enable the functionality of the location feature and output beer information respectively. It also connects to social media networks such as Facebook, Twitter, and Instagram in order to share a message about the beer picked.
-	\item 
 
+	There are other applications similar to "What is this Beer?" called "Untappd" and "Beer Buddy." Untappd allows the user to find nearby beers and bars and features based around that idea while Beer Buddy allows the user to find out more about a certain beer by UPC code. This application combines the most practical aspects of these applications such as outputting beer stores and beer information via search bar. 
+	\\ This product is completely separate from the applications mentioned above and is a standalone product.
+	\\ The product uses interfaces from systems such as Google Maps and LCBO in order to enable the functionality of the location feature and output beer information respectively. It also connects to social media networks such as Facebook, Twitter, and Instagram in order to share a message about the beer picked.
+    \\
 		\includegraphics[scale=0.1]{Block Diagram/Block Diagram.jpg}
 
 	
-\end{enumerate}
+
 % End SubSection
 
 \subsection{Product Functions}
@@ -136,7 +136,7 @@ The software should be able to:
 % Begin SubSection
 \begin{enumerate}
 
-	\item The User will need a basic knowledge of smartphone use: know where the Playstore is, know how to download applications off of the playstore and follow instructions in the application.
+	\item \textcolor{red}{The User will need a basic knowledge of smartphone use: know where the Playstore is, know how to download applications off of the playstore and follow instructions in the application.}
 	\item The User also needs to have enough knowledge of beer to identify the taste and type desired.
 
 \end{enumerate}
@@ -147,7 +147,7 @@ The software should be able to:
 % Begin SubSection
 \begin{enumerate}
 
-	\item The application can only search based on specific categories of keywords.
+	\item \textcolor{red}{The application can only search based on specific categories of keywords.}
 	\item Location functionality only works if location is enabled by the client.
 	\item The types of beer offered at local store locations will vary and will limit the amount of information the application is able to output.
 	
@@ -159,7 +159,7 @@ The software should be able to:
 % Begin SubSection
 \begin{enumerate}
 
-\item The application depends on information provided by the beer API used such as beer brand, beer taste, cost, etc.
+\item \textcolor{red}{The application depends on information provided by the beer API used such as beer brand, beer taste, cost, etc.}
 \item The application requires a desired input to be predicted by the application.
 
 \end{enumerate}
@@ -405,47 +405,6 @@ The following section contains the details about all of the functional requireme
 \label{ssub:expected_physical_environment}
 % Begin SubSubSection
 \begin{enumerate}[{OE}1. ]
-	\item The product shall be used in an environment with access to the internet
-	\item The product shall function in any environment that the device hardware can function.
-\end{enumerate}
-% End SubSubSection
-
-\subsubsection{Requirements for Interfacing with Adjacent Systems}
-\label{ssub:requirements_for_interfacing_with_adjacent_systems}
-% Begin SubSubSection
-\begin{enumerate}[{SR}1. ]
-	\item The product shall be connected to the internet and have access to Google Maps API.
-\end{enumerate}
-% End SubSubSection
-
-\subsubsection{Productization Requirements}
-\label{ssub:productization_requirements}
-% Begin SubSubSection
-\begin{enumerate}[{OE}1. ]
-	\item The product will be released on the Google Play Store for all Android devices.
-	\item The product shall be distributed as an Android Application Package(.apk) file.
-\end{enumerate}
-% End SubSubSection
-
-\subsubsection{Release Requirements}
-\label{ssub:release_requirements}
-% Begin SubSubSection
-\begin{enumerate}[{OE}1. ]
-	\item The product will have one single release date on April 3, 2016.
-\end{enumerate}
-% End SubSubSection
-
-% End SubSection
-
-\subsection{Operational and Environmental Requirements}
-\label{sub:operational_and_environmental_requirements}
-% Begin SubSection
-
-\subsubsection{Expected Physical Environment}
-\label{ssub:expected_physical_environment}
-% Begin SubSubSection
-\begin{enumerate}[{OE}1. ]
-	\item The product shall be used in an environment with access to the internet
 	\item The product shall function in any environment that the device hardware can function.
 \end{enumerate}
 % End SubSubSection
@@ -495,7 +454,6 @@ The following section contains the details about all of the functional requireme
 \begin{enumerate}[{MS}1. ]
 	\item The product will give a brief tutorial on the basic features after it's installation on to the users Android 
 	device.
-	\item The product will offer a ``Help'' section to provide the user with assistance.
 \end{enumerate}
 % End SubSubSection
 
@@ -517,7 +475,6 @@ The following section contains the details about all of the functional requireme
 \label{ssub:access_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{SR}1. ]
-	\item All users will have access to the functionality of the product.
 	\item No user shall have access to another users social media information.
 \end{enumerate}
 % End SubSubSection
@@ -526,7 +483,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:integrity_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{SR}1. ]
-	\item The product shall be protected from intentional abuse.
+	\item \emph{N/A}
 \end{enumerate}
 % End SubSubSection
 
@@ -534,7 +491,6 @@ The following section contains the details about all of the functional requireme
 \label{ssub:privacy_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{SR}1. ]
-	\item The product will not store users personal information.
 	\item The product shall protect the transfer of the users information if they choose to sign into a social media 
 	application.
 \end{enumerate}
@@ -566,7 +522,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:cultural_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{CP}1. ]
-	\item The product shall not be offensive to religious or ethnic groups.
+	\item The product shall not include symbols or words that are offensive to any religious or ethnic groups.
 \end{enumerate}
 % End SubSubSection
 
@@ -588,7 +544,7 @@ The following section contains the details about all of the functional requireme
 \label{ssub:compliance_requirements}
 % Begin SubSubSection
 \begin{enumerate}[{LR}1. ]
-	\item The product shall abide by all licenses used.
+	\item The users must be of legal drinking age in the country they are located.
 \end{enumerate}
 % End SubSubSection
 

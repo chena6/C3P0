@@ -85,7 +85,7 @@ The rest of the document is split up into four main sections:
 The following section provides a use case diagram for the application. \\
 
 \begin{figure}[!ht]
-%\includegraphics[scale=0.45]{use_case_diagram}
+\includegraphics[scale=0.45]{use_case_diagram}
 \caption{Use Case Diagram for the BEER'D Application}
 \end{figure}
 
@@ -111,7 +111,12 @@ The following section provides a use case diagram for the application. \\
 \section{Analysis Class Diagram}
 \label{sec:analysis_class_diagram}
 % Begin Section
-This section should provide an analysis class diagram for your application.
+The following section provides a analysis class diagram for the application. \\
+\begin{figure}[!ht]
+\includegraphics[scale=0.60]{analysis_class_diagram}
+\caption{Analysis Class Diagram for the BEER'D Application}
+\end{figure}
+
 % End Section
 
 
@@ -144,193 +149,30 @@ This section should provide an overview of the overall architectural design of y
 \section{Class Responsibility Collaboration (CRC) Cards}
 \label{sec:class_responsibility_collaboration_crc_cards}
 % Begin Section
+This section should contain all of your CRC cards.
 
+\begin{enumerate}[a)]
+	\item Provide a CRC Card for each identified class
+	\item Please use the format outlined in tutorial, i.e., 
 	\begin{table}[ht]
 		\centering
 		\begin{tabular}{|p{5cm}|p{5cm}|}
 		\hline 
-		 \multicolumn{2}{|l|}{\textbf{Class Name: Experts}} \\
+		 \multicolumn{2}{|l|}{\textbf{Class Name:}} \\
 		\hline
 		\textbf{Responsibility:} & \textbf{Collaborators:} \\
 		\hline
-		Knows user input  & \\
+		\vspace{1in} & \\
 		\hline
-		Handles beer prediction output & \\
-		\hline
-		Knows AccessInfoController & \\
-		\hline
-		Knows beer information & AccessinfoController\\
-		\hline
-		
 		\end{tabular}
 	\end{table}
 	
-	\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-		\hline 
-		\multicolumn{2}{|l|}{\textbf{Class Name: ForumPage}} \\
-		\hline
-		\textbf{Responsibility:} & \textbf{Collaborators:} \\
-		\hline
-		Knows user current location  & \\
-		\hline
-		Knows AccessInfoController & \\
-		\hline
-		Knows LCBO and Beerstore locations & NearLocIdentifier\\
-		\hline
-		Knows beers chosen by experts & AccessInfoController\\
-		\hline
-	    Displays Map  & \\
-	    \hline
-		Handles click event for "Facebook", "Twitter", and "Instagram" buttons & Social/MediaShare\\
-		\hline
-		\end{tabular}
-	\end{table}	
-
-	\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: SocialMediaShare}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Knows user message input  & \\
-			\hline
-			Checks message word limit & \\
-			\hline
-			Knows image input & \\
-			\hline
-			Knows AccessInfoController & \\
-			\hline
-			Knows media account information & AccessInfoController\\
-			\hline 
-		\end{tabular}
-	\end{table}	
-	
-	\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: NearLocIdentifier}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Knows user location & \\
-			\hline
-			Knows Beer Store and LCBO locations & AccessInfoController\\
-			\hline
-		\end{tabular}
-	\end{table}	
-	
-	\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: InputCheck}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Receive input from homepage  & Homepage\\
-			\hline
-			Receive input from ReSearch & ReSearch\\
-			\hline
-			Ensure proper input format & InputException\\
-			\hline
-			Analyze input for keywords & \\
-			\hline
-			Sort keywords into array & \\
-			\hline 
-			Return array of keywords & AccessInfoController\\
-			\hline 
-		\end{tabular}
-	\end{table}	
-
-	\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: InputException}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Receive input error  & InputCheck\\
-			\hline
-			Display error & \\
-			\hline
-		\end{tabular}
-	\end{table}	
-	
-	\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: AccessInfoController}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Access keyword array  & InputCheck\\
-			\hline
-			Search API information & APIWrapper\\
-			\hline
-			Request API Updates & UpdateAPI\\
-			\hline
-			Return keywords to experts & Experts\\
-			\hline
-			Receive expert information & Experts\\
-			\hline
-			Reference expert information with API & APIWrapper, Experts\\
-			\hline
-			Select up to three possible beverage options, placed into an array & \\
-			\hline
-			Send Array of options to ForumPage & ForumPage \\
-			\hline
-			
-		\end{tabular}
-	\end{table}	
-	
-	\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: APIWrapper}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Receive access request  & AccessInfoController\\
-			\hline
-			Receive update & UpdateAPI\\
-			\hline
-			Return API request information & AccessInfoController\\
-			\hline
-		\end{tabular}
-	\end{table}	
-	
-	\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: UpdateWrapper}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Receive update information  & AccessInfoController\\
-			\hline
-			Access update information & \\
-			\hline
-			Sends update & \\
-			\hline
-		\end{tabular}
-	\end{table}	
-
+\end{enumerate}
 % End Section
 
 % Division of Labour
 %------------------------------------------------------------------------------
-
 \newpage
-\clearpage
 \appendix
 \section{Division of Labour}
 \label{sec:division_of_labour}
@@ -339,8 +181,8 @@ This section should provide an overview of the overall architectural design of y
 \begin{tabular}{|l|l|l|l|}
 \hline
 \multicolumn{1}{|c|}{\textbf{Team Member}} & \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Student \\ Number\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Contribution}} & \multicolumn{1}{c|}{\textbf{Signature}} \\ \hline
-Arthur Chen & 1306616 & CRC Cards: Experts, ForumPage, SocialMediaShare, \\ & & NearLocIdentifier  &  \\ \hline
-Christopher Campbell & 1143732 & CRC Cards: InputCheck, InputException, AccessInfoController,\\  & & APIWrapper, UpdateWrapper & \\ \hline
+Arthur Chen & 1306616 &  &  \\ \hline
+Christopher Campbell & 1143732 & &  \\ \hline
 Johnny Endrizzi & 1310603 & &  \\ \hline
 Mitchell Coovert & 1306701 & &  \\ \hline
 Surinder Gill & 1308896 & &  \\ \hline
