@@ -145,6 +145,89 @@ This section should provide an overview of the overall architectural design of y
 \label{sec:class_responsibility_collaboration_crc_cards}
 % Begin Section
 
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+			\hline 
+			\multicolumn{2}{|l|}{\textbf{Class Name: GenInfoPage}} \\
+			\hline
+			\textbf{Responsibility:} & \textbf{Collaborators:} \\
+			\hline
+			gives application information &  \\
+			\hline
+		\end{tabular}
+	\end{table}	
+	
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+			\hline 
+			\multicolumn{2}{|l|}{\textbf{Class Name: Homepage}} \\
+			\hline
+			\textbf{Responsibility:} & \textbf{Collaborators:} \\
+			\hline
+			Gets user input  & \\
+			\hline
+			Extends GenInfoPage & GenInfoPage\\
+			\hline
+			Sends user inputs to InputCheck & InputCheck\\
+			\hline
+		\end{tabular}
+	\end{table}	
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+			\hline 
+			\multicolumn{2}{|l|}{\textbf{Class Name: RevPrevSearch}} \\
+			\hline
+			\textbf{Responsibility:} & \textbf{Collaborators:} \\
+			\hline
+			Receives search info & Homepage\\
+			\hline
+			Knows previous Searches & \\
+			\hline
+		\end{tabular}
+	\end{table}	
+
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+			\hline 
+			\multicolumn{2}{|l|}{\textbf{Class Name: DeleteSearch}} \\
+			\hline
+			\textbf{Responsibility:} & \textbf{Collaborators:} \\
+			\hline
+			delete historical search  & \\
+			\hline
+			Extends RevPrevSearch & RevPrevSearch\\
+			\hline
+			Knows previous Searches & \\
+			\hline
+		\end{tabular}
+	\end{table}	
+
+
+	
+\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+			\hline 
+			\multicolumn{2}{|l|}{\textbf{Class Name: ReSearch}} \\
+			\hline
+			\textbf{Responsibility:} & \textbf{Collaborators:} \\
+			\hline
+			Re-does previous search & \\
+			\hline
+			Extends RevPrevSearch & RevPrevSearch\\
+			\hline
+			Knows previous Searches & \\
+			\hline
+			Sends inputs to AccessInfoController & AccessInfoController\\
+			\hline
+		\end{tabular}
+	\end{table}	
+
 	\begin{table}[ht]
 		\centering
 		\begin{tabular}{|p{5cm}|p{5cm}|}
@@ -320,87 +403,6 @@ This section should provide an overview of the overall architectural design of y
 			Access update information & \\
 			\hline
 			Sends update & \\
-			\hline
-		\end{tabular}
-	\end{table}	
-
-	\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: GenInfoPage}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Gives application information &  \\
-			\hline
-		\end{tabular}
-	\end{table}	
-	
-\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: Homepage}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Gets user input  & \\
-			\hline
-			Extends GenInfoPage & GenInfoPage\\
-			\hline
-			Sends user inputs to InputCheck & InputCheck\\
-			\hline
-		\end{tabular}
-	\end{table}	
-
-\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: RevPrevSearch}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Receives search info & Homepage\\
-			\hline
-			Knows previous Searches & \\
-			\hline
-		\end{tabular}
-	\end{table}	
-
-\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: DeleteSearch}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Delete historical search  & \\
-			\hline
-			Extends RevPrevSearch & RevPrevSearch\\
-			\hline
-			Knows previous Searches & \\
-			\hline
-		\end{tabular}
-	\end{table}	
-
-\begin{table}[ht]
-		\centering
-		\begin{tabular}{|p{5cm}|p{5cm}|}
-			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: ReSearch}} \\
-			\hline
-			\textbf{Responsibility:} & \textbf{Collaborators:} \\
-			\hline
-			Re-does previous search & \\
-			\hline
-			Extends RevPrevSearch & RevPrevSearch\\
-			\hline
-			Knows previous Searches & \\
-			\hline
-			Sends inputs to AccessInfoController & AccessInfoController\\
 			\hline
 		\end{tabular}
 	\end{table}	
