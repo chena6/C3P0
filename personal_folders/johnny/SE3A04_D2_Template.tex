@@ -153,7 +153,13 @@ This section should provide an overview of the overall architectural design of y
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			gives application information &  \\
+			Provides beer descriptions & \\
+			\hline				
+			Provides correct input formats & \\
+			\hline
+			Provides other application information &  \\
+			\hline
+			Links to homepage & Homepage \\
 			\hline
 		\end{tabular}
 	\end{table}	
@@ -166,11 +172,11 @@ This section should provide an overview of the overall architectural design of y
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Gets user input  & \\
+			Gets user input for experts & \\
 			\hline
-			Extends GenInfoPage & GenInfoPage\\
+			Sends user inputs to InputCheck & InputCheck\\	
 			\hline
-			Sends user inputs to InputCheck & InputCheck\\
+			Responds to user inputs & \\	
 			\hline
 		\end{tabular}
 	\end{table}	
@@ -198,7 +204,7 @@ This section should provide an overview of the overall architectural design of y
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			delete historical search  & \\
+			Delete historical search  & \\
 			\hline
 			Extends RevPrevSearch & RevPrevSearch\\
 			\hline
