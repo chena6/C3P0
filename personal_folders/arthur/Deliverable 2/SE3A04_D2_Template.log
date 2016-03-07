@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.7)  6 MAR 2016 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.10.7)  6 MAR 2016 21:26
 entering extended mode
 **SE3A04_D2_Template.tex
 (SE3A04_D2_Template.tex
@@ -324,7 +324,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--283
 []\OT1/cmr/m/n/10 Reference ex-pert in-for-ma-tion
  []
 
-[6] [7] [8
+[6] [7]
+Overfull \hbox (46.4883pt too wide) in paragraph at lines 339--349
+ [][] 
+ []
+
+[8
 
 ] (SE3A04_D2_Template.aux) ) 
 Here is how much of TeX's memory you used:
@@ -341,7 +346,7 @@ fonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-Output written on SE3A04_D2_Template.pdf (8 pages, 111654 bytes).
+Output written on SE3A04_D2_Template.pdf (8 pages, 111862 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
