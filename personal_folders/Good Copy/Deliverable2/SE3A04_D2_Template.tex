@@ -196,13 +196,9 @@ and respond with the applicable data.
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Displays beer descriptions & \\
-			\hline				
-			Displays correct input formats & \\
+			Display General Beer Information & \\
 			\hline
-			Displays other application information &  \\
-			\hline
-			Links to homepage & Homepage \\
+			Receive Info Request & Homepage \\
 			\hline
 		\end{tabular}
 	\end{table}	
@@ -215,9 +211,9 @@ and respond with the applicable data.
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Gets user input for experts & \\
+			Gets user input & \\
 			\hline
-			Sends user inputs to InputCheck & InputCheck\\	
+			Return three inputs & InputCheck\\	
 			\hline
 			Responds to user inputs & \\	
 			\hline
@@ -232,9 +228,9 @@ and respond with the applicable data.
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Receives search info & Homepage\\
+			Receive previous search request & Homepage\\
 			\hline
-			Knows previous Searches & \\
+			Access previous Searches & \\
 			\hline
 		\end{tabular}
 	\end{table}	
@@ -247,11 +243,9 @@ and respond with the applicable data.
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Delete historical search  & \\
+			Receive previous search inputs & RevPrevSearch\\
 			\hline
-			Extends RevPrevSearch & RevPrevSearch\\
-			\hline
-			Knows previous Searches & \\
+			Delete previous search & \\
 			\hline
 		\end{tabular}
 	\end{table}	
@@ -266,13 +260,9 @@ and respond with the applicable data.
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Re-does previous search & \\
+			Receive previous search inputs & RevPrevSearch\\
 			\hline
-			Extends RevPrevSearch & RevPrevSearch\\
-			\hline
-			Knows previous Searches & \\
-			\hline
-			Sends inputs to AccessInfoController & AccessInfoController\\
+			Returns previous search inputs & AccessInfoController\\
 			\hline
 		\end{tabular}
 	\end{table}	
@@ -281,19 +271,56 @@ and respond with the applicable data.
 		\centering
 		\begin{tabular}{|p{5cm}|p{5cm}|}
 		\hline 
-		 \multicolumn{2}{|l|}{\textbf{Class Name: Experts}} \\
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Expert 1}} \\
 		\hline
 		\textbf{Responsibility:} & \textbf{Collaborators:} \\
 		\hline
-		Knows user input  & \\
+		Receive keyword input  & AccessInfoController\\
 		\hline
-		Handles beer prediction output & \\
+		Receive API information & AccessInfoController\\
 		\hline
-		Knows AccessInfoController & \\
+		Searches for keyword matches with beers & \\
 		\hline
-		Knows beer information & AccessinfoController\\
+		Returns matched beers & AccessInfoController\\
 		\hline
-		
+		\end{tabular}
+	\end{table}
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Expert 2}} \\
+		\hline
+		\textbf{Responsibility:} & \textbf{Collaborators:} \\
+		\hline
+		Receive keyword input  & AccessInfoController\\
+		\hline
+		Receive API information & AccessInfoController\\
+		\hline
+		Searches for keyword matches with beers & \\
+		\hline
+		Returns matched beers & AccessInfoController\\
+		\hline
+		\end{tabular}
+	\end{table}
+	
+	\begin{table}[ht]
+		\centering
+		\begin{tabular}{|p{5cm}|p{5cm}|}
+		\hline 
+		 \multicolumn{2}{|l|}{\textbf{Class Name: Expert 3}} \\
+		\hline
+		\textbf{Responsibility:} & \textbf{Collaborators:} \\
+		\hline
+		Receive keyword input  & AccessInfoController\\
+		\hline
+		Receive API information & AccessInfoController\\
+		\hline
+		Searches for keyword matches with beers & \\
+		\hline
+		Returns matched beers & AccessInfoController\\
+		\hline
 		\end{tabular}
 	\end{table}
 	
@@ -305,17 +332,13 @@ and respond with the applicable data.
 		\hline
 		\textbf{Responsibility:} & \textbf{Collaborators:} \\
 		\hline
-		Knows user current location  & \\
+		Receive near locations & NearLocIdentifier\\
 		\hline
-		Knows AccessInfoController & \\
+		Display LCBO and Beerstore locations on map & \\
 		\hline
-		Knows LCBO and Beerstore locations & NearLocIdentifier\\
+		Display beers chosen by experts & AccessInfoController\\
 		\hline
-		Knows beers chosen by experts & AccessInfoController\\
-		\hline
-	    Displays Map  & \\
-	    \hline
-		Handles click event for "Facebook", "Twitter", and "Instagram" buttons & Social/MediaShare\\
+		Handles click event for "Facebook", "Twitter", and "Instagram" buttons & SocialMediaShare\\
 		\hline
 		\end{tabular}
 	\end{table}	
@@ -328,15 +351,13 @@ and respond with the applicable data.
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Knows user message input  & \\
+			Gets user message input & \\
 			\hline
 			Checks message word limit & \\
 			\hline
 			Knows image input & \\
 			\hline
-			Knows AccessInfoController & \\
-			\hline
-			Knows media account information & AccessInfoController\\
+			Gathers media account information & ForumPage\\
 			\hline 
 		\end{tabular}
 	\end{table}	
@@ -349,9 +370,11 @@ and respond with the applicable data.
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Knows user location & \\
+			Gets user location & \\
 			\hline
-			Knows Beer Store and LCBO locations & AccessInfoController\\
+			Knows Beer Store and LCBO locations & \\
+			\hline
+			Returns near locations & ForumPage\\
 			\hline
 		\end{tabular}
 	\end{table}	
@@ -364,7 +387,7 @@ and respond with the applicable data.
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Receive input from homepage  & Homepage\\
+			Receive input from homepage & Homepage\\
 			\hline
 			Receive input from ReSearch & ReSearch\\
 			\hline
@@ -387,7 +410,7 @@ and respond with the applicable data.
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Receive input error  & InputCheck\\
+			Receive input error & InputCheck\\
 			\hline
 			Display error & \\
 			\hline
@@ -402,9 +425,9 @@ and respond with the applicable data.
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Access keyword array  & InputCheck\\
+			Access keyword array & InputCheck\\
 			\hline
-			Search API information & APIWrapper\\
+			Search API information & APIData\\
 			\hline
 			Request API Updates & UpdateAPI\\
 			\hline
@@ -412,7 +435,7 @@ and respond with the applicable data.
 			\hline
 			Receive expert information & Experts\\
 			\hline
-			Reference expert information with API & APIWrapper, Experts\\
+			Reference expert information with API & APIData, Experts\\
 			\hline
 			Select up to three possible beverage options, placed into an array & \\
 			\hline
@@ -426,11 +449,11 @@ and respond with the applicable data.
 		\centering
 		\begin{tabular}{|p{5cm}|p{5cm}|}
 			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: APIWrapper}} \\
+			\multicolumn{2}{|l|}{\textbf{Class Name: APIData}} \\
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Receive access request  & AccessInfoController\\
+			Receive access request & AccessInfoController\\
 			\hline
 			Receive update & UpdateAPI\\
 			\hline
@@ -443,11 +466,11 @@ and respond with the applicable data.
 		\centering
 		\begin{tabular}{|p{5cm}|p{5cm}|}
 			\hline 
-			\multicolumn{2}{|l|}{\textbf{Class Name: UpdateWrapper}} \\
+			\multicolumn{2}{|l|}{\textbf{Class Name: UpdateAPI}} \\
 			\hline
 			\textbf{Responsibility:} & \textbf{Collaborators:} \\
 			\hline
-			Receive update information  & AccessInfoController\\
+			Receive update information & AccessInfoController\\
 			\hline
 			Access update information & \\
 			\hline
