@@ -1,0 +1,16 @@
+
+public class Beer {
+	
+	private String name;				// name
+	private String color;
+	private String style;				// secondary_category | tertiary category
+	
+	private String[] tags;				// tags
+	
+	private String image_url;			// image_url
+	private String image_thumb_url;		// image_thumb_url
+
+	public Beer() {
+		
+	}
+}

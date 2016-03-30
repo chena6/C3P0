@@ -1,0 +1,12 @@
+
+public class Encryption {
+	
+	public static String encrypt(String s) {
+		return "";
+	}
+	
+	public static String decrypt(String s) {
+		return "";
+	}
+
+}

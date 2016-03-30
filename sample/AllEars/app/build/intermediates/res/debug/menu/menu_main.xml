@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/credits" android:title="@string/credits"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/help" android:title="@string/help"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+
+</menu>
+<!-- From: file:/C:/Users/Terin/Documents/SCHOOL/SFWR%20ENG%203A04/Project/C3P0/sample/AllEars/app/src/main/res/menu/menu_main.xml -->

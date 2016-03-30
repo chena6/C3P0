@@ -1,0 +1,13 @@
+
+public class Beer {
+	
+	private String name;
+	private String color;
+	
+	
+	private String image_url;
+
+	public Beer() {
+		
+	}
+}
