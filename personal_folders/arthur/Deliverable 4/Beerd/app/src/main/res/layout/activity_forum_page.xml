@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="arthur.beerd.ForumPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="30px"
+        android:textSize="42sp"
+        android:textStyle="italic|bold"
+        android:text="@string/We_Guessed" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/beer_output_border"
+        android:text="@string/Beer_Output"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:inputType="textMultiLine"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="76dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Other_Guesses"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/other_option_one"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:id="@+id/bullet1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/other_option_two"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/bullet1"
+        android:layout_marginTop="5dp"
+        android:id="@+id/bullet2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/other_option_three"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/bullet2"
+        android:layout_marginTop="5dp"
+        android:id="@+id/bullet3"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="@string/search_again"
+        android:id="@+id/button"
+        android:layout_below="@+id/bullet3"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="@string/home_page"
+        android:id="@+id/button2"
+        android:layout_below="@+id/bullet3"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="45dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:background="@drawable/general_border"
+        android:layout_width="123dp"
+        android:layout_height="180dp"
+        android:text="@string/share"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/button"
+        android:paddingTop="5dp"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
+
+    <TextView
+        android:background="@drawable/general_border"
+        android:layout_width="123dp"
+        android:layout_height="180dp"
+        android:text="@string/find"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/button2"
+        android:paddingTop="5dp"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+
+</RelativeLayout>
