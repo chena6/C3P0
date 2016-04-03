@@ -6,7 +6,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    xmlns:anndroid="http://schemas.android.com/apk/res-auto"
     android:weightSum="1"
     android:background="@drawable/background1">
 
