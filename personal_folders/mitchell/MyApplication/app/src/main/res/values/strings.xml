@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Search</string>
+    <string name="previous_searches">Previous Searches</string>
+
+    <string-array name="Expert1">
+        <item>Choice 1</item>
+        <item>Choice 2</item>
+        <item>Choice 3</item>
+    </string-array>
+
+    <string-array name="Expert2">
+        <item>Choice 1</item>
+        <item>Choice 2</item>
+        <item>Choice 3</item>
+    </string-array>
+
+    <string-array name="Expert3">
+        <item>Choice 1</item>
+        <item>Choice 2</item>
+        <item>Choice 3</item>
+    </string-array>
+
+    <!-- Prev_Searched_Beers, Expert1Info, Expert2Info, Expert3Info are temporary arrays to hold info for
+    the previous searches page-->
+
+    <string-array name="Prev_Searched_Beers">
+        <item>Beer1</item>
+        <item>Beer2</item>
+        <item>Beer3</item>
+        <item>Beer4</item>
+        <item>Beer5</item>
+        <item>Beer6</item>
+        <item>Beer7</item>
+        <item>Beer8</item>
+        <item>Beer9</item>
+        <item>Beer10</item>
+
+    </string-array>
+
+    <string-array name="Expert1Info">
+
+        <item>Flav1</item>
+        <item>Flav2</item>
+        <item>Flav3</item>
+        <item>Flav4</item>
+        <item>Flav5</item>
+        <item>Flav6</item>
+        <item>Flav7</item>
+        <item>Flav8</item>
+        <item>Flav9</item>
+        <item>Flav10</item>
+
+    </string-array>
+
+    <string-array name="Expert2Info">
+
+        <item>Look1</item>
+        <item>Look2</item>
+        <item>Look3</item>
+        <item>Look4</item>
+        <item>Look5</item>
+        <item>Look6</item>
+        <item>Look7</item>
+        <item>Look8</item>
+        <item>Look9</item>
+        <item>Look10</item>
+
+    </string-array>
+
+    <string-array name="Expert3Info">
+
+        <item>Beer1</item>
+        <item>Beer2</item>
+        <item>Beer3</item>
+        <item>Beer4</item>
+        <item>Beer5</item>
+        <item>Beer6</item>
+        <item>Beer7</item>
+        <item>Beer8</item>
+        <item>Beer9</item>
+        <item>Beer10</item>
+
+    </string-array>
+
+</resources>
