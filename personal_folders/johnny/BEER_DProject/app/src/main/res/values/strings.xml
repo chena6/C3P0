@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BEER_D</string>
+    <string name="action_settings">Settings</string>
+
+    //Homepage
+    <string name="btnSearchTxT">Look For Beer!</string>
+    <string name="btnPrevSearchTxT">Past Searches</string>
+    <string name="btnInfoTxT">What is this App?</string>
+
+    //GenInfo
+    <string name="GenInfoTitle">What Is This App?</string>
+
+    <string name="Drop1">BeerInfo</string>
+    <string name="Drop1Text">BeerInfo</string>
+
+    <string name="Drop2">How to use BEER\'D</string>
+    <string name="Drop2Text">Run the app and search</string>
+
+    <string name="Drop3">LCBO</string>
+    <string name="Drop3Text">The Liquor Control Board of Ontario is a thing</string>
+
+    <string name="Drop4">Experts</string>
+    <string name="Drop4Text">This is some information on the three experts used</string>
+
+    //
+
+</resources>

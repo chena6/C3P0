@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Beer\'d</string>
+    <string name="We_Guessed">We Guessed</string>
+
+    <!-- Guessed Beer from experts /replace -->
+    <string name="Beer_Output">Stella Artois</string>
+
+    <string name="Other_Guesses">Some More Options Were:</string>
+    <string name="Option_One"></string>
+
+    <!-- Three Other Guessed Beers /replace -->
+    <string name="other_option_one">► not found</string>
+    <string name="other_option_two">► not found</string>
+    <string name="other_option_three">► not found</string>
+
+
+    <string name="search_again">Search Again!</string>
+    <string name="home_page">Home Page!</string>
+
+    <string name="share">Share On Social Media</string>
+    <string name="find">Find Your Closest LCBO</string>
+</resources>
