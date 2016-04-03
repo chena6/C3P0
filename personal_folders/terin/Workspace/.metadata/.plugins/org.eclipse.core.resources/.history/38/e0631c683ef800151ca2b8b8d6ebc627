@@ -1,0 +1,38 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Controller {
+	
+	private static ArrayList<Beer> beers;
+
+	public static void main(String[] args) {
+		Parser.parse();
+		
+		beers = new ArrayList<Beer>();
+
+		try {
+			BufferedReader br = new BufferedReader(new FileReader("data/data.txt"));
+			String currentLine = br.readLine();
+			while (currentLine != null) {
+				currentLine = Encryption.decrypt(currentLine);
+				System.out.println(currentLine);
+				String[] elements = currentLine.split(",");
+				System.out.println(elements[3]);
+				//for (String s : elements) System.out.println(s);
+				//beers.add(new Beer(elements[0], elements[1], elements[2], elements[3]));
+				currentLine = br.readLine();
+			}
+			
+			br.close();
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//TODO(terin): Get input from UI here
+		//ExpertConsultant expertConsultant = new ExpertConsultant("Lager", "Light & Malty", "Canada", beers);
+		//ArrayList<ArrayList<Beer>> results = ConsultExperts.consult("Lager", "Light & Malty", "Canada", beers);
+	}
+}

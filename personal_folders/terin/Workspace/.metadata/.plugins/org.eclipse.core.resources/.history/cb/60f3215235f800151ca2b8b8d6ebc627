@@ -1,0 +1,41 @@
+
+public class Beer {
+	
+	private String name;
+	
+	private String type;
+		/* ALE
+		 * LAGER
+		 * COOLERS
+		 * SPECIALTY
+		 * GIFT AND SAMPLER PACKS
+		 * MALT BEVERAGES
+		 * HYBRID
+		 */
+	
+	private String style;
+		/* LIGHT & MALTY
+		 * LIGHT & FLORAL
+		 * LIGHT & FRUITY
+		 * MEDIUM & MALTY
+		 * MEDIUM & HOPPY
+		 * MEDIUM & ROASTED
+		 * FULL & ROASTED
+		 * FULL & HOPPY
+		 * BOLD & SPICY  
+		 */
+	
+	private String origin;
+		/* places
+		 * 
+		 * 
+		 * 
+		 * 
+		 */
+
+	public Beer(String n) {
+		this.name = n;
+	}
+	
+	public String getName() { return name; }
+}

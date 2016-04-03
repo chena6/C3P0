@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+
+public interface Expert {
+
+	public String decision(String input, ArrayList<Beer> b);
+	public String toString();
+}

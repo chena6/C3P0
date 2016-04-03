@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+
+public class TypeExpert implements Expert {
+
+	@Override
+	public String decision(String search, ArrayList<Beer> b) {
+		for (Beer b : beers) {
+			if (b.)
+		}
+		return null;
+	}
+	
+	public String toString() {
+		return "I am the Type Expert.";
+	}
+}

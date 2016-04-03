@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class StyleExpert implements Expert {
+
+	@Override
+	public String decision(ArrayList<Beer> b) {
+		return null;
+	}
+	
+	public String toString() {
+		return "";
+	}
+}

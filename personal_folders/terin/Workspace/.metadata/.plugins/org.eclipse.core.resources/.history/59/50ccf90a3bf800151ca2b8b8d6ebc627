@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class StyleExpert implements Expert {
+
+	public StyleExpert() {}
+
+	@Override
+	public Beer decision(String input, ArrayList<Beer> beers) {
+		for (Beer b : beers) {
+			if (b.style().equals(input)) {
+				return b;
+			}
+		}
+		return null;
+	}
+	
+	public String toString() {
+		return "I am the Style Expert.";
+	}
+}

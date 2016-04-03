@@ -1,0 +1,6 @@
+
+public interface Expert {
+
+	public String decision(ArrayList<Beer> b);
+	
+}

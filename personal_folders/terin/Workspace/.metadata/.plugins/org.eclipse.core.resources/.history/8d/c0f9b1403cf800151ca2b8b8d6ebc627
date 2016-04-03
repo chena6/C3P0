@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class ConsultExperts {
+
+	public static ArrayList<ArrayList<Beer>> consult(String input1, String input2, String input3, ArrayList<Beer> beers) {
+		ArrayList<ArrayList<Beer>> results = new ArrayList<ArrayList<Beer>>();
+		
+		TypeExpert typeExpert = new TypeExpert();
+		StyleExpert styleExpert = new StyleExpert();
+		OriginExpert originExpert = new OriginExpert();
+		
+		ArrayList<Beer> result1 = originExpert.decision(input1, beers);
+		ArrayList<Beer> result2 = styleExpert.decision(input2, result1);
+		ArrayList<Beer> result3 = typeExpert.decision(input3, result2);
+		
+		results.add(result1);
+		results.add(result2);
+		results.add(result3);
+
+		return results;
+	}
+}

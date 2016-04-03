@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class ExpertConsultant {
+	
+	private ArrayList<Beer> beers;
+
+	prv
+	
+	public ExpertConsultant() {
+		
+	}
+
+}

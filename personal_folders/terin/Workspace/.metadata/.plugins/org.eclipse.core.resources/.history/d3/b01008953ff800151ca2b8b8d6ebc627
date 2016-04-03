@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+public class ExpertConsultant {
+	
+	private ArrayList<Beer> beers;
+	private String typeInput;
+	private String styleInput;
+	private String originInput;
+	
+	private TypeExpert typeExpert = new TypeExpert();
+	
+	public ExpertConsultant(ArrayList<Beer> b, String ti, String si, String oi) {
+		beers = b;
+		typeInput = ti;
+		styleInput = si;
+		originInput = oi;
+	}
+	
+	public ArrayList<Beer> getTypeExpertResults() {
+		return typeExpert.decision(typeInput, beers);
+
+	}
+
+}

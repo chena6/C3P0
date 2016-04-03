@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+
+public class ExpertConsultant {
+	
+	private ArrayList<Beer> beers;
+
+	private String typeInput;
+	private String styleInput;
+	private String originInput;
+	
+	public ExpertConsultant() {
+		
+	}
+
+}

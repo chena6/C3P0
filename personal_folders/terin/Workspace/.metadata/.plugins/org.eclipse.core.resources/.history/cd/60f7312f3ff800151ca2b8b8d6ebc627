@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public class ExpertConsultant {
+	
+	private ArrayList<Beer> beers;
+	private String typeInput;
+	private String styleInput;
+	private String originInput;
+	
+	public ExpertConsultant(ArrayList<Beer> b, String ti, String si, String oi) {
+		beers = b;
+		typeInput = ti;
+		styleInput = si;
+		originInput = oi;
+	}
+
+}
