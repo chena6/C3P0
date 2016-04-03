@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\build\\intermediates\\res\\merged\\debug\\raw\\morse.csv",
+        "source": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\src\\main\\res\\raw\\morse.csv"
+    },
+    {
+        "merged": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\build\\intermediates\\res\\merged\\debug\\raw\\straight.png",
+        "source": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\src\\main\\res\\raw\\straight.png"
+    },
+    {
+        "merged": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\build\\intermediates\\res\\merged\\debug\\raw\\logo.png",
+        "source": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\src\\main\\res\\raw\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\build\\intermediates\\res\\merged\\debug\\raw\\morsecode.png",
+        "source": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\src\\main\\res\\raw\\morsecode.png"
+    }
+]

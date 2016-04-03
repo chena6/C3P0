@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_credits.xml",
+        "source": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\src\\main\\res\\menu\\menu_credits.xml"
+    },
+    {
+        "merged": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_text_morse.xml",
+        "source": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\src\\main\\res\\menu\\menu_text_morse.xml"
+    },
+    {
+        "merged": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_help.xml",
+        "source": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\src\\main\\res\\menu\\menu_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_taps_text.xml",
+        "source": "C:\\Users\\Arthur\\Documents\\GitHub\\C3P0\\sample\\AllEars\\app\\src\\main\\res\\menu\\menu_taps_text.xml"
+    }
+]
