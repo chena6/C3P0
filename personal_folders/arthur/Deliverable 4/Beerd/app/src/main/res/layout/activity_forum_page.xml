@@ -84,23 +84,24 @@
         android:layout_width="125dp"
         android:layout_height="50dp"
         android:text="@string/search_again"
-        android:id="@+id/button"
+        android:id="@+id/search_again"
         android:layout_below="@+id/bullet3"
         android:layout_marginTop="5dp"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="45dp"
-        />
+        android:onClick="buttonOnClickSearchAgain" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="125dp"
         android:layout_height="50dp"
         android:text="@string/home_page"
-        android:id="@+id/button2"
+        android:id="@+id/home_page"
         android:layout_below="@+id/bullet3"
         android:layout_marginTop="5dp"
         android:layout_marginRight="45dp"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentRight="true"
+        android:onClick="buttonOnClickHomePage" />
 
     <TextView
         android:background="@drawable/general_border"
@@ -109,10 +110,10 @@
         android:text="@string/share"
         android:gravity="center_horizontal"
         android:id="@+id/textView3"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/search_again"
         android:paddingTop="5dp"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_alignRight="@+id/search_again"
+        android:layout_alignEnd="@+id/search_again" />
 
     <TextView
         android:background="@drawable/general_border"
@@ -121,10 +122,52 @@
         android:text="@string/find"
         android:gravity="center_horizontal"
         android:id="@+id/textView4"
-        android:layout_below="@+id/button2"
+        android:layout_below="@+id/home_page"
         android:paddingTop="5dp"
-        android:layout_alignRight="@+id/button2"
-        android:layout_alignEnd="@+id/button2" />
+        android:layout_alignRight="@+id/home_page"
+        android:layout_alignEnd="@+id/home_page"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/facebook"
+        android:layout_alignTop="@+id/twitter"
+        android:layout_alignLeft="@+id/search_again"
+        android:layout_marginLeft="10dp"
+        />
+        <!--android:background=""                               add facebook pic here-->
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/twitter"
+        android:layout_alignTop="@+id/googlemaps"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_marginRight="10dp"
+        />
+        <!--android:background=""                               add twitter pic here-->
+
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/googlemaps"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        />
+        <!--android:background=""                              add google maps pic here-->
+
+
+
+
 
 
 </RelativeLayout>
