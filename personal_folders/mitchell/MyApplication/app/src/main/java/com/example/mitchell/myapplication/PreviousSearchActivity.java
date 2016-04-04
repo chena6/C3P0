@@ -20,6 +20,7 @@ public class PreviousSearchActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_previous_searches);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         prev_search = (ListView) findViewById(R.id.listView);
 
         beer_Names = getResources().getStringArray(R.array.Prev_Searched_Beers);
