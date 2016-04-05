@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/beerbg2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:id="@+id/weGuessed"
+            android:src="@mipmap/weguessedtext" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/beer_output_border"
+            android:text="@string/Beer_Output"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:inputType="textMultiLine"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/beerresult" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:id="@+id/homepagebutton"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/mainpage"
+            android:onClick="homepageButtonClick" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:id="@+id/facebookbutton"
+            android:src="@mipmap/shareonfb"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:id="@+id/mapsbutton"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="false"
+            android:src="@mipmap/maps" />
+
+    </LinearLayout>
+</RelativeLayout>
