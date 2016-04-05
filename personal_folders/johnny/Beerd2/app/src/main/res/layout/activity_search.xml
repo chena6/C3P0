@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/beerbg2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/experts"
+            android:src="@mipmap/experts"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/styleofbeer"
+            android:src="@mipmap/styleofbeer" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/typespinner"
+            android:entries="@array/type_options"
+            android:layout_weight="0.4"
+            android:dropDownWidth="wrap_content"
+            android:dropDownSelector="@mipmap/arrowdown"
+            android:transitionGroup="false"
+            android:spinnerMode="dialog"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/typeofbeer"
+            android:src="@mipmap/typeofbeer" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/style_options"
+            android:id="@+id/stylespinner"
+
+            android:layout_weight="0.4"
+            android:dropDownWidth="wrap_content"
+            android:dropDownSelector="@mipmap/arrowdown"
+            android:contextClickable="false"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/typeofcountry"
+            android:src="@mipmap/typeofcountry" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/countrytext"
+            android:editable="true"
+            android:hint="@string/countryoption"
+            android:allowUndo="false"
+            android:gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchButton"
+            android:layout_weight="1"
+            android:longClickable="true"
+            android:focusableInTouchMode="true"
+            android:src="@mipmap/search_button"
+            android:background="#00000000"
+            android:focusable="true"
+            android:layout_marginBottom="10dp"
+            android:onClick="expertsearchButtonClick" />
+
+
+    </LinearLayout>
+</RelativeLayout>
