@@ -68,6 +68,8 @@ public class forum extends AppCompatActivity{
         }
     }
 
+    
+
 //    public void facebookbutton(View b) {
 //        if(b.getId() == R.id.facebookbutton) {
 //            finish();
