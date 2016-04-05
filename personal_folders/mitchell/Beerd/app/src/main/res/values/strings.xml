@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Beerd2</string>
+    <string name="countryoption">Country</string>
+    <string name="Beer_Output">beer</string>
+    <string-array name="type_options">
+        <item>Ale</item>
+        <item>Lager</item>
+        <item>Coolers</item>
+        <item>Specialty</item>
+        <item>Gift and Sampler Packs</item>
+        <item>Malt Beverages</item>
+        <item>Hybrid</item>
+    </string-array>
+    <string-array name="style_options">
+        <item>Light and Malty</item>
+        <item>Light and Fruity</item>
+        <item>Medium and Malty</item>
+        <item>Medium and Hoppy</item>
+        <item>Medium and Roasted</item>
+        <item>Full and Roasted</item>
+        <item>Full and Hoppy</item>
+        <item>Bold and Spicy</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_app_id">558742743109</string>
+
+</resources>
