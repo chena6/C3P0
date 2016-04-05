@@ -13,7 +13,7 @@ public class Controller {
 	private static ArrayList<Beer> beers;
 
 	public static void main(String[] args) {
-		Parser.parse();
+		//Parser.parse();
 		
 		beers = new ArrayList<Beer>();
 
@@ -37,13 +37,14 @@ public class Controller {
 		//TODO(terin): Get the inputs from the UI here
 		
 		
-		ExpertConsultant expertConsultant = new ExpertConsultant(beers, "Lager", "Light & Malty", "Canada");
+		ExpertConsultant expertConsultant = new ExpertConsultant(beers, "Lager", "Light and Malty", "Canada");
 		
 		expertConsultant.getTypeExpertResults();
 		expertConsultant.getStyleExpertResults();
 		expertConsultant.getOriginExpertResults();
 		expertConsultant.consult();
 		
+		for (Beer b : expertConsultant.getOriginExpertResults()) System.out.println(b);
 		
 		//TODO(terin): Send the results above to the UI here
 		
