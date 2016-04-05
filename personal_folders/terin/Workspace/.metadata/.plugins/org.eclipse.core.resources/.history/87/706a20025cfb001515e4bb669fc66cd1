@@ -44,7 +44,7 @@ public class Controller {
 		expertConsultant.getOriginExpertResults();
 		expertConsultant.consult();
 		
-		for (Beer b : expertConsultant.getOriginExpertResults()) System.out.println(b);
+		for (Beer b : expertConsultant.getOriginExpertResults()()) System.out.println(b);
 		
 		//TODO(terin): Send the results above to the UI here
 		

@@ -36,7 +36,9 @@ public class Beer {
 	public Beer(String n, String t, String s, String o) {
 		this.setName(n);
 		this.setType(t);
-		this.setStyle(s.replace("&", "and"));
+		s.indexOf("&");
+		s.replace("&", "and");
+		this.setStyle(s);
 		this.setOrigin(o);
 	}
 
