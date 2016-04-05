@@ -2,6 +2,7 @@
     <string name="app_name">Beerd2</string>
     <string name="countryoption">Country</string>
     <string name="Beer_Output">beer</string>
+    <string name="facebook_app_id">461356180729322</string>
     <string-array name="type_options">
         <item>Ale</item>
         <item>Lager</item>
