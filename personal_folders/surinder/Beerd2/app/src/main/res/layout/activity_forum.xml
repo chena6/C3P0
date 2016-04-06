@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/beerbg2">
+    android:background="@mipmap/beerbg2"
+    android:onClick="mapStart">
 
     <LinearLayout
         android:orientation="vertical"
@@ -38,14 +39,12 @@
             android:src="@mipmap/mainpage"
             android:onClick="homepageButtonClick" />
 
-        <com.facebook.login.widget.LoginButton
+        <ImageView
             android:layout_width="fill_parent"
             android:layout_height="70dp"
             android:id="@+id/facebookbutton"
             android:src="@mipmap/shareonfb"
-            android:background="#00000000"
             android:layout_marginTop="20dp" />
-
 
         <ImageView
             android:layout_width="fill_parent"
@@ -54,12 +53,6 @@
             android:layout_marginTop="20dp"
             android:adjustViewBounds="false"
             android:src="@mipmap/maps" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/facebookTxtv"
-            android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
 </RelativeLayout>

@@ -1,11 +1,10 @@
 package com.threeao4.greenpentadudes.beerd2;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-
-import com.facebook.FacebookSdk;
 
 public class homepage extends AppCompatActivity {
 
@@ -13,8 +12,6 @@ public class homepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
-
-        FacebookSdk.sdkInitialize(getApplicationContext());
     }
 
     public void ongeninfoButtonClick(View b) {

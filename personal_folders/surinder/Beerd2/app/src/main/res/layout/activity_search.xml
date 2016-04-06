@@ -58,14 +58,16 @@
             android:id="@+id/typeofcountry"
             android:src="@mipmap/typeofcountry" />
 
-        <EditText
+        <Spinner
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/countrytext"
-            android:editable="true"
-            android:hint="@string/countryoption"
-            android:allowUndo="false"
-            android:gravity="center_horizontal" />
+            android:id="@+id/countryspinner"
+            android:entries="@array/country_options"
+            android:contextClickable="false"
+            android:dropDownWidth="wrap_content"
+            android:dropDownSelector="@mipmap/arrowdown"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.4" />
 
         <ImageButton
             android:layout_width="fill_parent"
