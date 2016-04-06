@@ -36,10 +36,9 @@ public class Controller {
 			while (currentLine != null) {
 				currentLine = Encryption.decrypt(currentLine);
 				String[] elements = currentLine.split(",");
-				System.out.println("first test " + currentLine);
 				beers.add(new Beer(elements[0], elements[1], elements[2], elements[3]));
 				currentLine = br.readLine();
-				System.out.println("second test" + currentLine);
+
 
 
 			}
