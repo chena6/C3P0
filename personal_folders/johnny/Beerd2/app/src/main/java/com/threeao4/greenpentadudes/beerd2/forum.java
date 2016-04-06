@@ -4,15 +4,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.widget.TextView;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.facebook.share.model.ShareLinkContent;
+import com.facebook.share.widget.ShareDialog;
 
 public class forum extends AppCompatActivity{
     private CallbackManager callbackManager;
@@ -23,10 +23,10 @@ public class forum extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forum);
 
-        facebook();
+        facebookLogin();
     }
 
-    public void facebook(){
+    public void facebookLogin(){
 
 
         callbackManager = CallbackManager.Factory.create();
@@ -37,14 +37,12 @@ public class forum extends AppCompatActivity{
             @Override
             public void onSuccess(LoginResult loginResult) {
                 facebookTxtv.setText("Login attempt Successful");
-//                facebookTxtv.setText("User ID: "
-//                        + loginResult.getAccessToken().getUserId()
-//                        + "\n" +
-//                        "Auth Token: "
-//                        + loginResult.getAccessToken().getToken());
             }
 
+            //TODO
+            //@Override
             protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+                //super.onActivityResult(requestCode, resultCode, data);
                 callbackManager.onActivityResult(requestCode, resultCode, data);
             }
 
@@ -58,8 +56,19 @@ public class forum extends AppCompatActivity{
                 facebookTxtv.setText("Login attempt failed.");
             }
         });
+    }
 
+    public void postToWall(){
+        ShareDialog shareDialog;
+        shareDialog = new ShareDialog(this);
 
+        if (ShareDialog.canShow(ShareLinkContent.class)){
+            ShareLinkContent linkContent = new ShareLinkContent.Builder()
+                    .setContentTitle("BEER'D")
+                    .setContentDescription("The Beer Finder")
+                    .build();
+            shareDialog.show(linkContent);
+        }
     }
 
     public void homepageButtonClick(View b) {
@@ -68,15 +77,9 @@ public class forum extends AppCompatActivity{
         }
     }
 
-    
-
-//    public void facebookbutton(View b) {
-//        if(b.getId() == R.id.facebookbutton) {
-//            finish();
-//        }
-//    }
-
-
-
-
+    public void facebookbutton(View b) {
+        if(b.getId() == R.id.facebookbutton) {
+            postToWall();
+        }
+    }
 }
