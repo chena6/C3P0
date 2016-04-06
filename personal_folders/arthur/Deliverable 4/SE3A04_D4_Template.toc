@@ -5,4 +5,5 @@
 \contentsline {subsection}{\numberline {2.3}Search Page}{3}
 \contentsline {subsection}{\numberline {2.4}Previous Search Page}{3}
 \contentsline {subsection}{\numberline {2.5}Forum Page}{3}
-\contentsline {section}{\numberline {A}Division of Labour}{4}
+\contentsline {section}{\numberline {3}Developer Information}{3}
+\contentsline {section}{\numberline {A}Division of Labour}{5}
