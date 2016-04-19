@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 
 public class homepage extends AppCompatActivity {
+    public static PrevSearchInfo p1 = new PrevSearchInfo();
+    public static PrevSearchInfo p2 = new PrevSearchInfo();
+    public static PrevSearchInfo p3 = new PrevSearchInfo();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
